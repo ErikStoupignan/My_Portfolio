@@ -2,7 +2,7 @@
 
 # My Portfolio!
 
-> In my portfolio, you can find evidence of my work as a web developer.
+ In my portfolio, you can find evidence of my work as a web developer.
 
 
 
