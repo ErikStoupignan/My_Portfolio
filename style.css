@@ -2,7 +2,6 @@ body {
   scroll-behavior: smooth;
   background-color: rgba(228, 218, 218, 0.36);
   margin: 0;
-  padding: 0%;
   width: auto;
 }
 
@@ -70,9 +69,9 @@ body {
 }
 
 /* This first edition is a mobile version */
-@media all and (max-width: 770px) {
+@media all and (max-width: 500px) {
   body {
-    border: solid;
+    border: 1px solid;
     width: 100%;
     padding-bottom: 400px;
   }
