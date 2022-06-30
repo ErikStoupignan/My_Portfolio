@@ -1,0 +1,75 @@
+body {
+    max-width: 500px;
+    max-height: 1000px;
+    box-sizing: border-box;
+}
+
+.main-name {
+    font-family: 'Playfair Display', serif; 
+    font-weight: 400px;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 100px 84px 0px 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-text {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -1%;
+    margin: 20px 16px 40px 16px;
+}
+
+
+.start-collaboration {
+    background-color: #1A2236;
+    width: 288px;
+    height: 50px;
+    margin: 0 auto;
+    padding: auto;  
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-collaboration a{
+    text-decoration: none;
+    color: #FFFFFF;
+}   
+
+.background-img {
+    border: 10px solid rgb(186, 194, 31);
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 150px;
+    margin: 0;
+    padding: 0;
+    background-image: url(/assets/image_geometry_1.png);
+    background-repeat: no-repeat;
+    
+}
+
+/*Class for the hamburguer button*/
+.option-menu {
+    background-image: url(/assets/ic_menu.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 30px;
+    padding: 10px;
+    
+}
+
+
+
+
+/* This first edition is a mobile version */
+@media all and (max-width:500px) {
+    
+}
