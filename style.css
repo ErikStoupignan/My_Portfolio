@@ -1,115 +1,109 @@
 body {
-    scroll-behavior: smooth;
-    background-color: rgba(228, 218, 218, 0.36);
-    margin: 0;
-    padding: 0%;
-    width: auto;
+  scroll-behavior: smooth;
+  background-color: rgba(228, 218, 218, 0.36);
+  margin: 0;
+  padding: 0%;
+  width: auto;
 }
 
 .main-name {
-    font-family: 'Playfair Display', serif; 
-    font-weight: 400px;
-    font-size: 60px;
-    line-height: 60px;
-    margin: 100px 84px 0px 16px;
-    display: flex;
-    flex-wrap: wrap;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400px;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 100px 84px 0 16px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-text {
-    font-family: 'Poppins',sans-serif;
-    font-weight: 400px;
-    font-size: 16px;
-    line-height: 21px;
-    letter-spacing: 3px;
-    margin: 25px 16px 0px 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 3px;
+  margin: 25px 16px 0 16px;
 }
-
 
 .start-collaboration {
-    background-color: #1A2236;
-    width: 288px;
-    height: 50px;
-    font-family: 'Poppins',sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0 auto;
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #1a2236;
+  width: 288px;
+  height: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.start-collaboration a{
-    text-decoration: none;
-    color: #FFFFFF;
-}   
+.start-collaboration a {
+  text-decoration: none;
+  color: #fff;
+}
 
 .background-img1 {
-    position: absolute;
-    margin: 0;
-    padding: 60px;
-    background-image: url(/assets/image_geometry_1.png);
-    background-repeat: no-repeat;
+  position: absolute;
+  margin: 0;
+  padding: 60px;
+  background-image: url(/assets/image_geometry_1.png);
+  background-repeat: no-repeat;
 }
 
 .background-img2 {
-
-    margin-top: 40px;
-    height: 240px;
-    width: 480px;
-    background-image: url(/assets/image_geometry_2.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
+  margin-top: 40px;
+  height: 240px;
+  width: 480px;
+  background-image: url(/assets/image_geometry_2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-/*Class for the hamburguer button*/
+/* Class for the hamburguer button */
 .option-menu {
-    background-image: url(/assets/ic_menu.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    padding: 10px;
+  background-image: url(/assets/ic_menu.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  padding: 10px;
 }
-
-
-
 
 /* This first edition is a mobile version */
 @media all and (max-width: 770px) {
-    body{
-        border: solid;
-        width: 100%;
-        padding-bottom: 400px;
-    }
+  body {
+    border: solid;
+    width: 100%;
+    padding-bottom: 400px;
+  }
 
-    .visible-area {
-        max-width: 100%;
-    }
+  .visible-area {
+    max-width: 100%;
+  }
 
-    .start-collaboration {
-        margin-bottom: 40px;
-    }
+  .start-collaboration {
+    margin-bottom: 40px;
+  }
 
-    .background-img1 {
-        position: absolute;
-        margin: 0;
-        padding: 60px;
-        background-repeat: no-repeat;
-    }
+  .background-img1 {
+    position: absolute;
+    margin: 0;
+    padding: 60px;
+    background-repeat: no-repeat;
+  }
 
-    .background-img2 {
-        margin: 0 auto;
+  .background-img2 {
+    margin: 0 auto;
+    background-image: url(/assets/image_geometry_2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 
-        background-image: url(/assets/image_geometry_2.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-    .option-menu {
-        position: absolute;
-        margin-left: 85%;
-        margin-top: 10%;
-        padding: 20px;
-        background-size: 100%;
-    }
+  .option-menu {
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 10%;
+    padding: 20px;
+    background-size: 100%;
+  }
 }
