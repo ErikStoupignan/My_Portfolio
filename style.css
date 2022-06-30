@@ -1,5 +1,5 @@
 body {
-    border: 10px solid rgb(186, 194, 31);
+    border: 10px solid rgba(248, 248, 247, 0);
     max-width: 500px;
     max-height: 1000px;
     box-sizing: border-box;
@@ -54,13 +54,13 @@ body {
 }
 
 .background-img2 {
-    border: 5px solid black;
-    margin-top: 30px;
-    height: 200px;
-    width: 470px;
-    size-adjust: 0px;
+
+    margin-top: 40px;
+    height: 240px;
+    width: 480px;
     background-image: url(/assets/image_geometry_2.png);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 /*Class for the hamburguer button*/
