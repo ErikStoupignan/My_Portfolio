@@ -1,9 +1,9 @@
 body {
-    border: 10px solid rgba(248, 248, 247, 0);
-    max-width: 500px;
-    max-height: 1000px;
-    box-sizing: border-box;
-    padding-bottom: 1000px;
+    scroll-behavior: smooth;
+    background-color: rgba(228, 218, 218, 0.36);
+    margin: 0;
+    padding: 0%;
+    width: auto;
 }
 
 .main-name {
@@ -68,16 +68,48 @@ body {
     background-image: url(/assets/ic_menu.png);
     background-repeat: no-repeat;
     position: absolute;
-    margin-left: 430px;
-    margin-top: 30px;
     padding: 10px;
-    
 }
 
 
 
 
 /* This first edition is a mobile version */
-@media all and (max-width:500px) {
-    
+@media all and (max-width: 770px) {
+    body{
+        border: solid;
+        width: 100%;
+        padding-bottom: 400px;
+    }
+
+    .visible-area {
+        max-width: 100%;
+    }
+
+    .start-collaboration {
+        margin-bottom: 40px;
+    }
+
+    .background-img1 {
+        position: absolute;
+        margin: 0;
+        padding: 60px;
+        background-repeat: no-repeat;
+    }
+
+    .background-img2 {
+        margin: 0 auto;
+
+        background-image: url(/assets/image_geometry_2.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .option-menu {
+        position: absolute;
+        margin-left: 85%;
+        margin-top: 10%;
+        padding: 20px;
+        background-size: 100%;
+    }
 }
