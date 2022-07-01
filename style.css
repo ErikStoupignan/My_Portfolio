@@ -149,7 +149,7 @@ body {
   }
 
   /* Imag box */
-  .box1 {  
+  .box1 {
     grid-area: photo;
     display: flex;
     width: 100%;
@@ -223,7 +223,63 @@ body {
     display: flex;
   }
 
+  /* About area */
+  .about {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
+  /* Skills area */
+  .square {
+    width: 90vw;
+    height: 90vw;
+    margin:5%;
+    display: inline-block;
+    flex-direction: column;
+  }
 
+  .skill-font-title {
+    font-family:  'Poppins', serif;
+    font-size: 2em;
+    color: white;
+    margin-left: 40px;
+    margin-top: 50px;
+    padding: 0;
+    letter-spacing: 2px;
+    place-self: center;
+  }
+
+  .skill-font-ul {
+    font-family:  'Poppins', serif;
+    font-size: 1.4em;
+    color: white;
+    margin-left: 30px;
+    margin-right: auto;
+    letter-spacing: 2px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leng-color {
+    background-color:#1C528A;
+    background-image: url(/assets/GATO.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+
+  .fram-color {
+    background-color:#E2505C;
+    background-image: url(/assets/CUADRADO.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+
+  .skill-color {
+    background-color:#FEBF52;
+    background-image: url(/assets/FOTO.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
 
 }
