@@ -111,4 +111,112 @@ body {
     display: flex;
     justify-content: center;
   }
+
+  /* All prject container */
+  .project {
+    background-color: #1A2236;
+  }
+
+  /* title area of projects */
+  h2 {
+    font-family:  'Playfair Display', serif;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 32px;
+
+    font-weight: 182px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+
+  .container {
+    display:grid;
+    grid-template-areas: 'photo photo photo'
+                          'p-name p-name p-name'
+                          'uno dos tres'
+                          'button button button';
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 15% 10% auto;
+
+  }
+
+  /* General style for letters */
+  .box {
+    font-family: Poppins , sans-serif;;
+    color: white;
+  }
+
+  /* Imag box */
+  .box1 {  
+    grid-area: photo;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Main sentence: Project name goes here */
+  .box2 {
+    grid-area: p-name;
+    display: flex;
+  }
+
+  .subtitle {
+    margin-left: 5%;
+    font-style: normal;
+    line-height:80%;
+    font-size: 180%;
+  }
+
+  /* Code button's */
+  .code-button {
+    background-color: #98DEDE;
+    display:inline-flex;
+    align-self: center;
+    font-size: 80%;
+    padding: 0 2vh 0 2vh;
+
+  }
+
+  /* Letter desing inside the Code's button */
+  .align {
+    display: flex;
+    justify-content: center;
+    color: black !important;
+  }
+
+  .box3 {
+    grid-area: uno;
+  }
+
+  .box4 {
+    grid-area: dos;
+  }
+
+  .box5 {
+    grid-area: tres;
+  }
+
+  /* Style of button "See this project" */
+  .box6  a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .box6  p{
+    border: 2px solid rgb(250, 247, 247);
+    margin-left: 20px;
+    padding:10px;
+  }
+
+  .box6 {
+    grid-area: button;
+    font-size: 120%;
+    display: flex;
+  }
+
+
+
+
 }
