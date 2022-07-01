@@ -166,7 +166,7 @@ body {
     margin-left: 5%;
     font-style: normal;
     line-height:80%;
-    font-size: 180%;
+    font-size: 160%;
   }
 
   /* Code button's */
@@ -204,10 +204,17 @@ body {
     color: white;
   }
 
-  .box6  p{
+  .buttom-arrow {
     border: 2px solid rgb(250, 247, 247);
     margin-left: 20px;
-    padding:10px;
+    padding-left:10px;
+    padding-right: 10px;
+    display: inline-flex;
+  }
+
+  .arrow {
+    display: inline-flex;
+    flex: auto;
   }
 
   .box6 {
