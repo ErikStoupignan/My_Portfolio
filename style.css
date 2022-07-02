@@ -117,8 +117,14 @@ body {
     background-color: #1a2236;
   }
 
+  /* Unorder list in project area */
+  .project ul {
+    list-style: none;
+    padding: 0;
+  }
+
   /* title area of projects */
-  h2 {
+  .about h1 {
     font-family: 'Playfair Display', serif;
     margin-left: 20px;
     margin-top: 30px;
