@@ -117,12 +117,6 @@ body {
     background-color: #1a2236;
   }
 
-  /* Unorder list in project area */
-  .project ul {
-    list-style: none;
-    padding: 0;
-  }
-
   /* title area of projects */
   .about h1 {
     font-family: 'Playfair Display', serif;
@@ -134,12 +128,13 @@ body {
     line-height: 50px;
   }
 
+  /* Class of every Section on the */
   .container {
     display: grid;
     grid-template-areas:
       'photo photo photo'
       'p-name p-name p-name'
-      'uno dos tres'
+      'uno uno uno'
       'button button button';
     grid-template-columns: auto auto auto;
     grid-template-rows: auto 15% 10% auto;
@@ -181,23 +176,29 @@ body {
     padding: 0 2vh 0 2vh;
   }
 
-  /* Letter desing inside the Code's button */
-  .align {
-    display: flex;
-    justify-content: center;
-    color: black !important;
-  }
-
-  .box3 {
+  /* Unorder list inside the projects */
+  .ul-container {
     grid-area: uno;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    font-size: 90%;
   }
 
-  .box4 {
-    grid-area: dos;
+  .ul-technologys {
+    list-style-type: none;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    justify-content: space-around;
+    align-self: center;
   }
 
-  .box5 {
-    grid-area: tres;
+  .ul-technologys li {
+    background-color: #98dede;
+    color: black;
+    padding: 3px 15px 3px 15px;
   }
 
   /* Style of button "See this project" */
@@ -206,17 +207,30 @@ body {
     color: white;
   }
 
+  .ul-container ul a {
+    text-decoration: none;
+  }
+
   .buttom-arrow {
-    border: 2px solid rgb(250, 247, 247);
     margin-left: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-bottom: 20px;
+    padding-left: 15px;
     display: inline-flex;
   }
 
+  .buttom-arrow p {
+    border: 2px solid rgb(238, 238, 238);
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 10px;
+    display: flex;
+  }
+
   .arrow {
-    display: inline-flex;
-    flex: auto;
+    position: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
   }
 
   .box6 {
