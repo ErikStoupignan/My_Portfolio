@@ -30,10 +30,8 @@ body {
 /* Include the main name -->Erik */
 .main-name {
   font-family: 'Playfair Display', serif;
-  font-weight: 400px;
   font-size: 60px;
   line-height: 60px;
-  align-content: left;
 }
 
 /* Include the main text top */
@@ -46,13 +44,26 @@ body {
 }
 
 /* Button start collaboration */
-.start-collaboration {
+/* .start-collaboration {
   background-color: #1a2236;
   width: 288px;
   height: 50px;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+} */
+
+.start-collaboration {
+  background-color: #1a2236;
+  width: 95%;
+  height: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin: 40px auto 40px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,228 +83,284 @@ body {
 
 /* This first edition is a mobile version */
 @media only screen and (max-width: 770px) {
-  body {
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
+    body {
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
+    }
+
+    .nav-bar {
+      display: flex;
+      justify-content: right;
+    }
+
+    .option-menu {
+      color: #000;
+      display: block;
+      font-size: 2em;
+      position: fixed;
+      top: 30px;
+      right: 30px;
+    }
+
+    .background-img1 {
+      margin: 0;
+      left: 0;
+      top: 0;
+    }
+
+    .start-collaboration {
+      margin-bottom: 40px;
+    }
+
+    .background-img2 {
+      display: flex;
+      flex: auto;
+    }
+
+    .prueba {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* All prject container */
+    .project {
+      background-color: #1a2236;
+    }
+
+    /* title area of projects */
+    .about h1 {
+      font-family: 'Playfair Display', serif;
+      margin-left: 20px;
+      margin-top: 30px;
+      margin-bottom: 32px;
+      font-weight: 182px;
+      font-size: 50px;
+      line-height: 50px;
+    }
+
+    /* Class of every Section on the */
+    .container {
+      display: grid;
+      grid-template-areas:
+        'photo photo photo'
+        'p-name p-name p-name'
+        'uno uno uno'
+        'button button button';
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto 15% 10% auto;
+    }
+
+    /* General style for letters */
+    .box {
+      font-family: Poppins, sans-serif;
+      color: white;
+    }
+
+    /* Imagen box */
+    .box1 {
+      grid-area: photo;
+      display: flex;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Main sentence: Project name goes here */
+    .box2 {
+      grid-area: p-name;
+      display: flex;
+    }
+
+    .subtitle {
+      margin-left: 5%;
+      font-style: normal;
+      line-height: 80%;
+      font-size: 160%;
+    }
+
+    /* Code button's */
+    .code-button {
+      background-color: #98dede;
+      display: inline-flex;
+      align-self: center;
+      font-size: 80%;
+      padding: 0 2vh 0 2vh;
+    }
+
+    /* Unorder list inside the projects */
+    .ul-container {
+      grid-area: uno;
+      display: inline-flex;
+      padding: 0;
+      margin: 0;
+      font-size: 90%;
+    }
+
+    .ul-technologys {
+      list-style-type: none;
+      flex: 1;
+      padding: 0;
+      margin: 0;
+      display: inline-flex;
+      justify-content: space-around;
+      align-self: center;
+    }
+
+    .ul-technologys li {
+      background-color: #98dede;
+      color: black;
+      padding: 3px 15px 3px 15px;
+    }
+
+    /* Style of button "See this project" */
+    .box6 a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .ul-container ul a {
+      text-decoration: none;
+    }
+
+    .buttom-arrow {
+      margin-left: 20px;
+      margin-bottom: 20px;
+      padding-left: 15px;
+      display: inline-flex;
+    }
+
+    .buttom-arrow p {
+      border: 2px solid rgb(238, 238, 238);
+      margin-top: 10px;
+      padding: 10px;
+      padding-left: 10px;
+      display: flex;
+    }
+
+    .arrow {
+      position: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 10px;
+    }
+
+    .box6 {
+      grid-area: button;
+      font-size: 120%;
+      display: flex;
+    }
+
+    /* About area */
+    .about {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    /* Skills area */
+    .square {
+      width: 90vw;
+      height: 90vw;
+      margin: 5%;
+      display: inline-block;
+      flex-direction: column;
+    }
+
+    .skill-font-title {
+      font-family: 'Poppins', serif;
+      font-size: 2em;
+      color: white;
+      margin-left: 40px;
+      margin-top: 50px;
+      padding: 0;
+      letter-spacing: 2px;
+      place-self: center;
+    }
+
+    .skill-font-ul {
+      font-family: 'Poppins', serif;
+      font-size: 1.4em;
+      color: white;
+      margin-left: 30px;
+      margin-right: auto;
+      letter-spacing: 2px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .leng-color {
+      background-color: #1c528a;
+      background-image: url(/assets/GATO.png);
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+    }
+
+    .fram-color {
+      background-color: #e2505c;
+      background-image: url(/assets/CUADRADO.png);
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+    }
+
+    .skill-color {
+      background-color: #febf52;
+      background-image: url(/assets/FOTO.png);
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      margin: 0%;
+      padding: 0%;
+    }
+
+    .submit-form {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
   }
 
-  .nav-bar {
+  .submit-form > h1{
     display: flex;
-    justify-content: right;
-  }
-
-  .option-menu {
-    color: #000;
-    display: block;
-    font-size: 2em;
-    position: fixed;
-    top: 30px;
-    right: 30px;
-  }
-
-  .background-img1 {
+    padding: 20px 0 10px 20px;
     margin: 0;
-    left: 0;
-    top: 0;
   }
 
-  .start-collaboration {
-    margin-bottom: 40px;
-  }
-
-  .background-img2 {
+  .submit-form > p{
     display: flex;
-    flex: auto;
-  }
-
-  .prueba {
-    display: flex;
-    justify-content: center;
-  }
-
-  /* All prject container */
-  .project {
-    background-color: #1a2236;
-  }
-
-  /* title area of projects */
-  .about h1 {
-    font-family: 'Playfair Display', serif;
-    margin-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 32px;
-    font-weight: 182px;
-    font-size: 50px;
-    line-height: 50px;
-  }
-
-  /* Class of every Section on the */
-  .container {
-    display: grid;
-    grid-template-areas:
-      'photo photo photo'
-      'p-name p-name p-name'
-      'uno uno uno'
-      'button button button';
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto 15% 10% auto;
-  }
-
-  /* General style for letters */
-  .box {
-    font-family: Poppins, sans-serif;
-    color: white;
-  }
-
-  /* Imag box */
-  .box1 {
-    grid-area: photo;
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-
-  /* Main sentence: Project name goes here */
-  .box2 {
-    grid-area: p-name;
-    display: flex;
-  }
-
-  .subtitle {
-    margin-left: 5%;
-    font-style: normal;
-    line-height: 80%;
-    font-size: 160%;
-  }
-
-  /* Code button's */
-  .code-button {
-    background-color: #98dede;
-    display: inline-flex;
-    align-self: center;
-    font-size: 80%;
-    padding: 0 2vh 0 2vh;
-  }
-
-  /* Unorder list inside the projects */
-  .ul-container {
-    grid-area: uno;
-    display: inline-flex;
-    padding: 0;
+    padding: 25px 0 50px 25px;
     margin: 0;
-    font-size: 90%;
   }
 
-  .ul-technologys {
-    list-style-type: none;
-    flex: 1;
-    padding: 0;
-    margin: 0;
-    display: inline-flex;
-    justify-content: space-around;
-    align-self: center;
+  .inputs-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 0 15px;
   }
 
-  .ul-technologys li {
-    background-color: #98dede;
-    color: black;
-    padding: 3px 15px 3px 15px;
-  }
-
-  /* Style of button "See this project" */
-  .box6 a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .ul-container ul a {
-    text-decoration: none;
-  }
-
-  .buttom-arrow {
-    margin-left: 20px;
-    margin-bottom: 20px;
+  .inputs-group > input {
+    height: 50px;
+    margin: 7px 0 7px 0;
+    border-radius: 5px;
+    border-color: rgba(48, 42, 42, 0.493);
+    font-family: 'Poppins', serif;
+    font-size: 1em;
+    text-align: left;
+    padding-top: 20px;
     padding-left: 15px;
-    display: inline-flex;
   }
 
-  .buttom-arrow p {
-    border: 2px solid rgb(238, 238, 238);
-    margin-top: 10px;
-    padding: 10px;
-    padding-left: 10px;
-    display: flex;
-  }
-
-  .arrow {
-    position: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 10px;
-  }
-
-  .box6 {
-    grid-area: button;
-    font-size: 120%;
-    display: flex;
-  }
-
-  /* About area */
-  .about {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  /* Skills area */
-  .square {
-    width: 90vw;
-    height: 90vw;
-    margin: 5%;
-    display: inline-block;
-    flex-direction: column;
-  }
-
-  .skill-font-title {
+  ::placeholder {
+    color:rgba(56, 53, 53, 0.493);
+    position: absolute;
+    left: 5%;
+    top: 0;
     font-family: 'Poppins', serif;
-    font-size: 2em;
-    color: white;
-    margin-left: 40px;
-    margin-top: 50px;
-    padding: 0;
-    letter-spacing: 2px;
-    place-self: center;
+    font-size: 1em;
   }
 
-  .skill-font-ul {
-    font-family: 'Poppins', serif;
-    font-size: 1.4em;
-    color: white;
-    margin-left: 30px;
-    margin-right: auto;
-    letter-spacing: 2px;
-    display: flex;
-    flex-direction: column;
+  .message-input {
+    height: 112px !important;
   }
 
-  .leng-color {
-    background-color: #1c528a;
-    background-image: url(/assets/GATO.png);
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-  }
-
-  .fram-color {
-    background-color: #e2505c;
-    background-image: url(/assets/CUADRADO.png);
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-  }
-
-  .skill-color {
-    background-color: #febf52;
-    background-image: url(/assets/FOTO.png);
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-  }
 }
