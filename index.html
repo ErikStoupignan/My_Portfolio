@@ -277,48 +277,52 @@
         </section>
 
         <!-- Contact form -->
-        <section  class="contact-form">
+        <section>
             <!-- Photo at the top -->
             <div class="contain-img1">
-                <img class="photo-2" src="/assets/image_geometry_1.png" alt="Background photo" class="background-img1">
+                <img class="photo-2 " src="/assets/image_geometry_1.png" alt="Background photo">
             </div>
 
-            <section class="submit-form">
+            <!-- Get stared -->
+            <div class="submit-form">
                 <h1 class="main-name">Get started</h1>
                 <p class="main-text">Lorem ipsum dolor sit, 
                     amet consectetur adipisicing elit. Itaque, alias!
                 </p>
-                <form class="inputs-group" action="" id="contact">
-                    <input type="text"  value="" placeholder="Your name" class="name-input" required>
-                    <input type="email" value="" placeholder="Your email" class="email-input" required>
-                    <input type="text"  value="" placeholder="Enter your message here..." class="message-input" required>
-                    <button type="submit"></button>
+
+                <!-- Inputs area -->
+                <form class="inputs-group" 
+                action="https://formspree.io/f/mrgjwpka"
+                method="POST"
+                enctype="multipart/form-data" id="contact">
+                    <input type="text"  name="name" placeholder="Your name" class="name-input" maxlength="30" required>
+                    <input type="email" name="email" placeholder="Your email" class="email-input" required>
+                    <input type="text"  name="Additional-text" placeholder="Enter your message here..." class="message-input" maxlength="500" required>
+                    <button type="submit">send</button>
     
                     <div class="start-collaboration">
                             <a href="https://github.com/ErikStoupignan">Start collaboration</a>
                     </div>
                 </form>
 
+                <!-- Here are the footer section that includes all the icons -->
                 <footer class="footer-section">
                     <div class="get-my-resume">
                         <p>Get My Resume</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/ErikStoupignan"><i class="fas fa-external-link-alt"></i></a>
                     </div>
 
                     <div class="icons">
                         <a href="#"><i class="fab fa-stack-overflow"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/ErikStoupignan"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/Erik_Stoupignan"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/erik-stoupignan-s%C3%A1nchez-beltr%C3%A1n-393180238/"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-medium"></i></a>
-                        <a href="#"><i class="fas fa-hand-peace"></i></a>                    
+                        <a href="https://microverse.notion.site/microverse/Microverse-Student-Handbook-ca8ac3bfccdd4e708b26d5d967fe4392"><i class="fas fa-hand-peace"></i></a>                    
                     </div>
 
                 </footer>
-            </section>
-
-
-
+            </div>
         </section>
     </body>
 </html> 
