@@ -43,20 +43,6 @@ body {
   letter-spacing: 3px;
 }
 
-/* Button start collaboration */
-/* .start-collaboration {
-  background-color: #1a2236;
-  width: 288px;
-  height: 50px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-} */
-
 .start-collaboration {
   background-color: #1a2236;
   width: 95%;
@@ -338,6 +324,10 @@ body {
     margin: 0 15px 0 15px;
   }
 
+  .inputs-group > button {
+    display: none;
+  }
+
   .inputs-group > input {
     height: 50px;
     margin: 7px 0 7px 0;
@@ -361,6 +351,47 @@ body {
 
   .message-input {
     height: 112px !important;
+    line-height: 2em;
+
   }
+
+  .footer-section {
+    font-family: 'Poppins', serif;
+    font-size: 2em;
+    color: white;
+    background: #1A2236;
+    height: 150px;
+  }
+
+  .get-my-resume {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  .get-my-resume > a {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .icons a {
+    color: white;
+    display: inline-flex;
+    text-decoration: none;
+  }
+
+  .icons > a > i {
+    font-size: 30px;
+    ;    
+  }
+
 
 }
