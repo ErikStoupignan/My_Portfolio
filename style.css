@@ -65,6 +65,7 @@
     padding-right: 5%;
     background-image: url(assets/desktop/desk-img-2.png);
     background-repeat: no-repeat;
+    background-size: 25%;
     background-position-x: right;
     background-position-y: bottom;
   }
@@ -129,28 +130,26 @@
     margin-right: 0;
   }
 
+  /* Project area     --------------------------------------------------*/
+  
 
 
 
 
 
-  /* Top background contain */
-  .contain-img1 {
+
+
+
+
+
+
+
+
+
+  /* Images that olny need show in the mobile versión */
+  .display-none {
     display: none;
   }
-
-  /* Top background photo */
-  .background-img1 {
-    margin: 0;
-    left: 0;
-    top: 0;
-  }
-
-  /* Don't show the imagen 2 in the bis screen */
-  .background-img2 {
-    display: none;
-  }
-
 
 
 
@@ -183,12 +182,15 @@
   .main-area {
     padding: 0 5% 0 5%;
     margin: auto;
+    background-image: none;
   }
 
   .visible-area {
     width: 100%;
     margin: auto;
   }
+
+
 
 
 
@@ -451,6 +453,10 @@
   .about {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .get-my-cv {
+    margin-left: 20px;
   }
 
   /* Skills area */
