@@ -362,10 +362,11 @@ body {
     display: inline-flex;
     justify-content: center;
     margin-left: 20px;
+    color: #92dcdc;
   }
 
   .get-my-resume > a {
-    color: white;
+    color: #92dcdc;
     display: flex;
     align-items: center;
     margin-left: 10px;
