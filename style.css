@@ -1,72 +1,92 @@
-body {
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-}
 
-.visible-area {
-  width: 90%;
-  margin: 0 auto;
-}
 
-/* Top background contain */
-.contain-img1 {
-  display: flex;
-  justify-content: left;
-}
 
-/* Top background photo */
-.background-img1 {
-  margin: 0;
-  left: 0;
-  top: 0;
-}
+  body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+  }
 
-/* Class for the hamburguer button */
-.option-menu {
-  display: none;
-}
+  .visible-area {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-/* Include the main name -->Erik */
-.main-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 60px;
-  line-height: 60px;
-}
+  /* Top background contain */
+  .contain-img1 {
+    display: none;
+  }
 
-/* Include the main text top */
-.main-text {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 200px;
-  font-size: 16px;
-  line-height: 21px;
-  letter-spacing: 3px;
-}
+  /* Top background photo */
+  .background-img1 {
+    margin: 0;
+    left: 0;
+    top: 0;
+  }
 
-.start-collaboration {
-  background-color: #1a2236;
-  width: 95%;
-  height: 50px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  margin: 40px auto 40px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
+  /* Class for the hamburguer button */
+  /* Don't let see the icons when is desktop version */
+  .respmenu i, .respmenu input {
+    display: none;
+  }
 
-/* The ancor of start collaboration */
-.start-collaboration a {
-  text-decoration: none;
-  color: #fff;
-}
+  /* Include the main name -->Erik */
+  .main-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    line-height: 60px;
+  }
 
-/* Don't show the imagen 2 in the bis screen */
-.background-img2 {
-  display: none;
-}
+  /* Include the main text top */
+  .main-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200px;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 3px;
+  }
 
+  .start-collaboration {
+    background-color: #1a2236;
+    width: 95%;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 40px auto 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  /* The ancor of start collaboration */
+  .start-collaboration a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* Don't show the imagen 2 in the bis screen */
+  .background-img2 {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 /* This first edition is a mobile version */
 @media only screen and (max-width: 770px) {
   body {
@@ -75,25 +95,100 @@ body {
     overflow-x: hidden;
   }
 
-  .nav-bar {
-    display: flex;
-    justify-content: right;
+  .contain-img1 {
+    display: inline-block;
+    justify-content: left;
   }
 
-  .option-menu {
-    color: #000;
+  /* Here start the code of the hamburguer button*/
+  /* Header in inline-flex to see the background photo and button in line*/
+  header {
+    display: inline-flex;
+    width: 100%;
+  }
+
+  /* Let see the icons again */
+  .respmenu i, .respmenu input {
     display: block;
-    font-size: 2em;
-    position: fixed;
-    top: 30px;
-    right: 30px;
   }
 
+  /* format of all the anchors in the list */
+  .respmenu a {
+    font-family: Poppins, sans-serif;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 2px solid #456789;
+    max-width: 100px;
+    background: #234567;
+    text-align: center;
+  }
+
+  .respmenu li {
+    list-style: none;
+  }
+
+  /* Position of the hamburguer on the screen*/
+  .respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 48px;
+    height: 48px;
+  }
+  
+  /* Make a responsive hamburguer and select the size */
+  .respmenu .fa-bars, .respmenu .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+  }
+  
+  /* Control de opacity, with this let see the icons */
+  .respmenu input[type="checkbox"] {
+    opacity: 0;
+  }
+  
+  /* Control of the nav-bar principal */
+  .respmenu {
+    color: rgb(10, 10, 10);
+    position: relative;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  
+  /* Don't let see the list items */
+  .respmenu nav {
+    display: none;
+    margin-right: 70px;
+  }
+  
+  /* Show the list when clic on the icon */
+  .respmenu input:checked ~ nav {
+    display: block;
+  }
+  
+  /* when show the list, delet the icon of hamburguer */
+  .respmenu input:checked ~ .fa-bars {
+    display: none;
+  }
+  
+  /* Don't let se the X, after clic on the burguer, this change*/
+  .respmenu input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+
+
+  /* Background img 1 is in the header */
   .background-img1 {
     margin: 0;
     left: 0;
     top: 0;
   }
+  /* Here finish all the class of the hamburguer button */
+
 
   .start-collaboration {
     margin-bottom: 40px;
