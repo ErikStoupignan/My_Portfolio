@@ -302,7 +302,7 @@ body {
     margin: 0;
   }
 
-  .submit-form > h1 {
+  .submit-form > h2 {
     display: flex;
     padding: 20px 0 10px 20px;
     margin: 0;
@@ -320,10 +320,6 @@ body {
     margin: 0 15px 0 15px;
   }
 
-  .inputs-group > button {
-    display: none;
-  }
-
   .inputs-group > input {
     height: 50px;
     margin: 7px 0 7px 0;
@@ -334,6 +330,32 @@ body {
     text-align: left;
     padding-top: 20px;
     padding-left: 15px;
+  }
+
+  .inputs-group > textarea {
+    height: 50px;
+    margin: 7px 0 7px 0;
+    border-radius: 5px;
+    border-color: rgba(48, 42, 42, 0.493);
+    font-family: 'Poppins', serif;
+    font-size: 1em;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+
+  .start-collaboration-submit button {
+    background-color: #1a2236;
+    color: white;
+    width: 95%;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 40px auto 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
   }
 
   ::placeholder {
@@ -348,6 +370,7 @@ body {
   .message-input {
     height: 112px !important;
     line-height: 2em;
+    padding-left: 10px;
   }
 
   .footer-section {
@@ -355,7 +378,8 @@ body {
     font-size: 2em;
     color: white;
     background: #1a2236;
-    height: 150px;
+    height: 120px;
+    padding: 0;
   }
 
   .get-my-resume {
@@ -369,23 +393,34 @@ body {
     color: #92dcdc;
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 0;
     text-decoration: none;
+    font-size: 0.7em;
+  }
+
+  .get-my-resume > p {
+    margin: 10px;
+    font-size: 18px;
+    padding: 0;
   }
 
   .icons {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 
-  .icons a {
-    color: white;
+  .icons > li > a {
+    color: rgb(255, 255, 255);
     display: inline-flex;
     text-decoration: none;
   }
 
-  .icons > a > i {
-    font-size: 30px;
+  .icons > li > a > i {
+    font-size: 28px;
   }
 
   .ul-container ul a {
