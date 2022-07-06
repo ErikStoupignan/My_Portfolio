@@ -30,10 +30,8 @@ body {
 /* Include the main name -->Erik */
 .main-name {
   font-family: 'Playfair Display', serif;
-  font-weight: 400px;
   font-size: 60px;
   line-height: 60px;
-  align-content: left;
 }
 
 /* Include the main text top */
@@ -45,14 +43,13 @@ body {
   letter-spacing: 3px;
 }
 
-/* Button start collaboration */
 .start-collaboration {
   background-color: #1a2236;
-  width: 288px;
+  width: 95%;
   height: 50px;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  margin: 0 auto;
+  margin: 40px auto 40px auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +143,7 @@ body {
     color: white;
   }
 
-  /* Imag box */
+  /* Imagen box */
   .box1 {
     grid-area: photo;
     display: flex;
@@ -205,10 +202,6 @@ body {
   .box6 a {
     text-decoration: none;
     color: white;
-  }
-
-  .ul-container ul a {
-    text-decoration: none;
   }
 
   .buttom-arrow {
@@ -295,5 +288,142 @@ body {
     background-image: url(/assets/FOTO.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
+  }
+
+  /* Contact Form */
+  .contact-form {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .submit-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .submit-form > h2 {
+    display: flex;
+    padding: 20px 0 10px 20px;
+    margin: 0;
+  }
+
+  .submit-form > p {
+    display: flex;
+    padding: 25px 0 50px 25px;
+    margin: 0;
+  }
+
+  .inputs-group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px 0 15px;
+  }
+
+  .inputs-group > input {
+    height: 50px;
+    margin: 7px 0 7px 0;
+    border-radius: 5px;
+    border-color: rgba(48, 42, 42, 0.493);
+    font-family: 'Poppins', serif;
+    font-size: 1em;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+
+  .inputs-group > textarea {
+    height: 50px;
+    margin: 7px 0 7px 0;
+    border-radius: 5px;
+    border-color: rgba(48, 42, 42, 0.493);
+    font-family: 'Poppins', serif;
+    font-size: 1em;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 15px;
+  }
+
+  .start-collaboration-submit button {
+    background-color: #1a2236;
+    color: white;
+    width: 95%;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 40px auto 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  ::placeholder {
+    color: rgba(56, 53, 53, 0.493);
+    position: absolute;
+    left: 5%;
+    top: 0;
+    font-family: 'Poppins', serif;
+    font-size: 1em;
+  }
+
+  .message-input {
+    height: 112px !important;
+    line-height: 2em;
+    padding-left: 10px;
+  }
+
+  .footer-section {
+    font-family: 'Poppins', serif;
+    font-size: 2em;
+    color: white;
+    background: #1a2236;
+    height: 120px;
+    padding: 0;
+  }
+
+  .get-my-resume {
+    display: inline-flex;
+    justify-content: center;
+    margin-left: 20px;
+    color: #92dcdc;
+  }
+
+  .get-my-resume > a {
+    color: #92dcdc;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 0.7em;
+  }
+
+  .get-my-resume > p {
+    margin: 10px;
+    font-size: 18px;
+    padding: 0;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .icons > li > a {
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    text-decoration: none;
+  }
+
+  .icons > li > a > i {
+    font-size: 28px;
+  }
+
+  .ul-container ul a {
+    text-decoration: none;
   }
 }
