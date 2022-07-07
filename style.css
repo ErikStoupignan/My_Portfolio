@@ -1,82 +1,23 @@
-
-
-
+/* This first edition is a mobile version */
+@media only screen and (max-width: 770px) {
   body {
-    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-  }
-  
-  
-  /* Class for the hamburguer button */
-  /* Don't let see the icons when is desktop version */
-  .respmenu i, .respmenu input {
-    display: none;
-  }
-
-  /* nav- bar for desktop version                            */
-  .respmenu {
-    width: auto;
-    height: 100px;
-    font-family: 'Poppins', sans-serif;
-    background-color: #dddfe646;
-  }
-
-  .respmenu > nav {
     width: 100%;
-    height: 100px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    overflow-x: hidden;
   }
 
-  .respmenu > nav > ul {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 40%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .respmenu > nav > ul > li {
-    list-style: none;
-  }
-
-  .respmenu > nav > ul > li > a {
-    text-decoration: none;
-    color: #1a2236;
-    font-size: 16px;
-  }
-  /* END OF THE NAV- BAR                                     */
-
-  /* sTART THE MIDDLE AREA                                   */
   .visible-area {
-    width: 100%;
-    display: inline-flex;
-    padding: 0%;
-    margin: 0%;
+    width: 90%;
+    margin: 0 auto;
   }
 
-  /* This area have inside the title, paragraph and the start collaboration button */
-  .main-area {
-    width: auto;
-    padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 5%;
-    background-image: url(assets/desktop/desk-img-2.png);
-    background-repeat: no-repeat;
-    background-size: 25%;
-    background-position-x: right;
-    background-position-y: bottom;
-  }
-
-  /* Include the main name -->Erik */
   .main-name {
     font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-size: 5vw;
+    font-size: 60px;
+    line-height: 60px;
   }
-
+  
   /* Include the main text top */
   .main-text {
     font-family: 'Poppins', sans-serif;
@@ -86,348 +27,18 @@
     letter-spacing: 3px;
   }
 
-  /* Button START COLLABORATION */
-  .start-collaboration {
-    background-color: #1a2236;
-    width: 55%;
-    height: 50px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    margin: 40px auto 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-  }
-
-  /* The ancor of start collaboration */
-  .start-collaboration > a {
-    text-decoration: none;
-    color: #fff;
-  }
-  /* Here finish the main area                                                       */
-
-
-
-  /* DESKTOP VERSION PHOTO */
-  .contain-img1-desktop {
-    display: flex;
-    justify-content: right;
-    width: 100%;
-    height: auto;
-  }
-
-  .contain-img1-desktop > img {
-    min-width: 100%;
-    height: 100%;
-  }
-
-  .patron {
-    position: relative;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: 0;
-  }
-
-  /* Project area     --------------------------------------------------*/
-  .container > div {
-    display: none;
-  }
-
-  .desktop-project {
-    margin-top: 100px;
-    display: grid;
-    grid-template-areas: 
-      'title p1 p1'
-      'p2 img1 p6'
-      'p3 p3  p5'
-      '. . img2'
-      'img3 p4 .';
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
-  }
-
-  /* title project */
-  .desktop-project > .title-project {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-image: url(/assets/desktop/desk-img-2.png);
-    background-repeat: no-repeat;
-    background-position-y: top;
-    background-position-x: right;
-  }
-
-  .desktop-project > .title-project > h1 {
-    grid-area: title;
-    transform: rotate(-90deg);
-    position: relative;
-    margin: auto 150px auto auto;
-    font-size: 10em;
-  }
-
-  .desktop-project > .title-project > img {
-
-    position:absolute;
-    margin: 0 0 100 100;
-  }
-
-  /* Section 1 */
-  .section1 {
-    grid-area: p1;
-    display: flex;
-    width: auto;
-    padding: 0;
-    margin: 0;
-  }
-
-  .section1 > img {
-    width: 100%;
-  }
-
-  /* Section 2 */
-  .section2 {
-    grid-area: p2;
-
-    display: flex;
-    align-items: flex-star;
-    width: 100%;
-    height: 90%;
-    padding-top:  10%;
-    margin: 0;
-  }
-
-  /* Section 3 */
-  .section3 {
-    grid-area: p3;
-    display: flex;
-
-    padding: 0;
-    margin: 0;
-    width: 100;
-    height: 142%;
-    grid-column: 1 / 3;
-  }
-
-  /* Section 4 */
-  .section4 {
-    grid-area: p4;
-    padding-top: 14%;
-    padding-left: 33%;
-    display: flex;
-    margin: 0;
-    width: 80;
-    height: 100%;
-    grid-row: 4/5;
-    grid-column: 2 / 4;
-  }
-
-  /* Section 5 */
-  .section5 {
-    grid-area: p5;
-    display: flex;
-    width: auto;
-    height: 100%;
-    padding-bottom: 30%;
-    margin: 0;
-    grid-column: 2.5 / 4;
-  }
-
-  /* Section 6 */
-  .section6 {
-    grid-area: p6;
-    display: flex;
-    width: auto;
-    padding: 0;
-    margin: 0;
-    grid-column: auto;
-  }
-
-  .imag-grid-1 {  
-    grid-area: img1;
-    display: flex;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-
-  .imag-grid-2 {
-    grid-area: img2;
-    display: flex;
-    justify-content: right;
-    margin: 0 0 0 auto;
-    width: 67%;
-    height: 40%;
-    grid-column: 2 / 4;
-  }
-
-  .imag-grid-3 {
-    grid-area: img3;
-    padding-top: 28%;
-    display: flex;
-    margin: 0;
-    width: 40;
-    height: 15%;
-    grid-row: 4/6;
-  }
-
-  .imag-grid-4 {
-    grid-area: img4;
-    padding-top: 14%;
-    padding-left: 24%;
-    height: 12%;
-    display: flex;
-    margin: 0;
-    grid-row: 4/6;
-    grid-column: 2 / 4;
-  }
-  
-
-  /* Project area end -------------------------------------------------- */
-  
-
-
-  /* About area---------------------------------------------------------- */
-  /* About area end ----------------------------------------------------- */
-
-
-  /* Contact area ------------------------------------------------------- */
-  /* Contact area end --------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* Images that olny need show in the mobile versión */
-  .display-none {
-    display: none;
-  }
-
-
-
-
-
-
-
-
-/* This first edition is a mobile version */
-@media (max-width: 770px) {
-  body {
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-  }
-
   .display-none-after {
     display: none !important;
   }
 
-  .main-area {
-    padding: 0 5% 0 5%;
-    margin: auto;
-    background-image: none;
-  }
-
-  .desktop-project {
-    margin-top: 0%;
-    display: block;
-    
-  }
-
-  .desktop-project > .title-project > h1 {
-    transform: none;
-    margin-left: 0;
-    font-size: 40px;
-  }
-
-  .desktop-project > .title-project {
-    background-image: none;
-    margin: 20px;
-    margin-left: 0%;
-  }
-
-  .container > img {
-    padding: 0;
-    margin: 0%;
-  }
-
-  .section1 {
-    grid-area: p1;
-    display: flex;
-    width: auto;
-    padding: 0;
+  .desktop-project > div > h1 {
+    background-color: white;
+    height: 100%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     margin: 0;
   }
 
-  .section2 {
-    grid-area: p1;
-    display: flex;
-    width: auto;
-    padding: 0;
-    margin: 0;
-  }
-
-  .section3 {
-    grid-area: p1;
-    display: flex;
-    width: auto;
-    padding: 0;
-    margin: 0;
-  }
-
-  .section4 {
-    grid-area: p1;
-    display: flex;
-    width: auto;
-    padding: 0;
-    margin: 0;
-  }
-
-    .section5 {
-    grid-area: p1;
-    display: flex;
-    width: auto;
-    padding: 0;
-    margin: 0;
-  }
-
-  .section6 {
-    grid-area: p1;
-    display: flex;
-    width: auto;
-    padding: 0;
-    margin: 0;
-  }
-
-
-
-  
-
-
-
-
-
-
-
-  .contain-img1 {
-    display: inline-block;
-    justify-content: left;
-  }
-
-  .patron {
-  display: none;
-  }
 
   /* Here start the code of the hamburguer button*/
   /* Header in inline-flex to see the background photo and button in line*/
@@ -517,8 +128,55 @@
     left: 0;
     top: 0;
   }
-  /* Here finish all the class of the hamburguer button */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .background-img1 {
+    margin: 0;
+    left: 0;
+    top: 0;
+  }
 
   .start-collaboration {
     background-color: #1a2236;
@@ -526,12 +184,18 @@
     height: 50px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    margin: 40px auto 40px 0;
+    margin: 40px auto 40px auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
   }
+
+  /* The ancor of start collaboration */
+.start-collaboration a {
+  text-decoration: none;
+  color: #fff;
+}
 
   .background-img2 {
     display: flex;
@@ -545,17 +209,7 @@
 
   /* All prject container */
   .project {
-    display: block;
-    width: auto;
-  }
-
-  .main-name {
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 32px;
-    font-weight: 182px;
-    font-size: 50px;
-    line-height: 50px;
-    padding-left: 20px;
+    background-color: #1a2236;
   }
 
   /* title area of projects */
@@ -569,10 +223,6 @@
     line-height: 50px;
   }
 
-  .container > div {
-    display: flex;
-  }
-
   /* Class of every Section on the */
   .container {
     display: grid;
@@ -583,7 +233,6 @@
       'button button button';
     grid-template-columns: auto auto auto;
     grid-template-rows: auto 15% 10% auto;
-    background-color: #1a2236;
   }
 
   /* General style for letters */
@@ -687,10 +336,6 @@
     margin-right: 20px;
   }
 
-  .get-my-cv {
-    margin-left: 20px;
-  }
-
   /* Skills area */
   .square {
     width: 90vw;
@@ -755,13 +400,13 @@
     margin: 0;
   }
 
-  .submit-form > h2 {
+  .submit-form > div > h2 {
     display: flex;
     padding: 20px 0 10px 20px;
     margin: 0;
   }
 
-  .submit-form > p {
+  .submit-form > div > p {
     display: flex;
     padding: 25px 0 50px 25px;
     margin: 0;
@@ -879,4 +524,544 @@
   .ul-container ul a {
     text-decoration: none;
   }
+}
+
+
+
+/* DESKTOP VERSION                                                             */
+@media only screen and (min-width: 770px) {
+
+
+  /* Nav-bar version */
+  .respmenu i, .respmenu input {
+    display: none;
+  }
+
+  /* nav- bar for desktop version                            */
+  .respmenu {
+    width: auto;
+    height: 100px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #dddfe646;
+  }
+
+  .respmenu > nav {
+    width: 100%;
+    height: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .respmenu > nav > ul {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .respmenu > nav > ul > li {
+    list-style: none;
+  }
+
+  .respmenu > nav > ul > li > a {
+    text-decoration: none;
+    color: #1a2236;
+    font-size: 16px;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+
+
+    /* sTART THE MIDDLE AREA                                   */
+    .visible-area {
+      width: 100%;
+      display: inline-flex;
+      padding: 0%;
+      margin: 0%;
+    }
+  
+    /* This area have inside the title, paragraph and the start collaboration button */
+    .main-area {
+      width: auto;
+      padding-top: 10%;
+      padding-left: 10%;
+      padding-right: 5%;
+      background-image: url(assets/desktop/desk-img-2.png);
+      background-repeat: no-repeat;
+      background-size: 25%;
+      background-position-x: right;
+      background-position-y: bottom;
+    }
+  
+    /* Include the main name -->Erik */
+    .main-name {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400;
+      font-size: 5vw;
+    }
+  
+    /* Include the main text top */
+    .main-text {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 200px;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 3px;
+    }
+  
+    /* Button START COLLABORATION */
+    .start-collaboration {
+      background-color: #1a2236;
+      width: 55%;
+      height: 50px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      margin: 40px auto 40px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
+  
+    /* The ancor of start collaboration */
+    .start-collaboration > a {
+      text-decoration: none;
+      color: #fff;
+    }
+    /* Here finish the main area                                                       */
+  
+  
+  
+    /* DESKTOP VERSION PHOTO */
+    .contain-img1-desktop {
+      display: flex;
+      justify-content: right;
+      width: 100%;
+      height: auto;
+    }
+  
+    .contain-img1-desktop > img {
+      min-width: 100%;
+      height: 100%;
+    }
+  
+    .patron {
+      position: relative;
+      display: inline-block;
+      margin-left: auto;
+      margin-right: 0;
+    }
+  
+    /* Project area     --------------------------------------------------*/
+    .container > div {
+      display: none;
+    }
+  
+    .desktop-project {
+      margin-top: 100px;
+      display: grid;
+      grid-template-areas: 
+        'title p1 p1'
+        'p2 img1 p6'
+        'p3 p3  p5'
+        '. . img2'
+        'img3 p4 .';
+      grid-template-columns: 3fr 3fr 3fr;
+      grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    }
+  
+    /* title project */
+    .desktop-project > .title-project {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      background-image: url(/assets/desktop/desk-img-2.png);
+      background-repeat: no-repeat;
+      background-position-y: top;
+      background-position-x: right;
+    }
+  
+    .desktop-project > .title-project > h1 {
+      grid-area: title;
+      transform: rotate(-90deg);
+      position: relative;
+      margin: auto 150px auto auto;
+      font-size: 10em;
+    }
+  
+    .desktop-project > .title-project > img {
+      position:absolute;
+      margin: 0 0 100 100;
+    }
+  
+    /* Section 1 */
+    .section1 {
+      grid-area: p1;
+      display: flex;
+      width: auto;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .section1 > img {
+      width: 100%;
+    }
+  
+    /* Section 2 */
+    .section2 {
+      grid-area: p2;
+  
+      display: flex;
+      align-items: flex-star;
+      width: 100%;
+      height: 90%;
+      padding-top:  10%;
+      margin: 0;
+    }
+  
+    /* Section 3 */
+    .section3 {
+      grid-area: p3;
+      display: flex;
+  
+      padding: 0;
+      margin: 0;
+      width: 100;
+      height: 142%;
+      grid-column: 1 / 3;
+    }
+  
+    /* Section 4 */
+    .section4 {
+      grid-area: p4;
+      padding-top: 14%;
+      padding-left: 33%;
+      display: flex;
+      margin: 0;
+      width: 80;
+      height: 100%;
+      grid-row: 4/5;
+      grid-column: 2 / 4;
+    }
+  
+    /* Section 5 */
+    .section5 {
+      grid-area: p5;
+      display: flex;
+      width: auto;
+      height: 100%;
+      padding-bottom: 30%;
+      margin: 0;
+      grid-column: 2.5 / 4;
+    }
+  
+    /* Section 6 */
+    .section6 {
+      grid-area: p6;
+      display: flex;
+      width: auto;
+      padding: 0;
+      margin: 0;
+      grid-column: auto;
+    }
+  
+    .imag-grid-1 {  
+      grid-area: img1;
+      display: flex;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .imag-grid-2 {
+      grid-area: img2;
+      display: flex;
+      justify-content: right;
+      margin: 0 0 0 auto;
+      width: 67%;
+      height: 40%;
+      grid-column: 2 / 4;
+    }
+  
+    .imag-grid-3 {
+      grid-area: img3;
+      padding-top: 28%;
+      display: flex;
+      margin: 0;
+      width: 40;
+      height: 15%;
+      grid-row: 4/6;
+    }
+  
+    .imag-grid-4 {
+      grid-area: img4;
+      padding-top: 14%;
+      padding-left: 24%;
+      height: 12%;
+      display: flex;
+      margin: 0;
+      grid-row: 4/6;
+      grid-column: 2 / 4;
+    }
+    /* Project area end -------------------------------------------------- */
+  
+
+
+
+    /* About area---------------------------------------------------------- */
+    .about-section {
+      width: 100%;
+  
+      position:relative;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 150px;
+    }
+  
+    /* About section -----------------------------------------------  */
+    .about-section .about {
+      width: 30%;
+      height: 500px;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      position: static;
+      justify-content: left;
+      align-items: ;
+    }
+
+    .about h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 400px;
+      font-size: 110px;
+      line-height: 100%;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-self: left;
+
+
+    }
+
+    .about p {
+      font-family: Poppins, serif;
+
+    }
+  
+    /* End of about section    --------------------------------------- */
+
+    /* Skills section   ---------------------------------------------- */
+  .about-section .skills {
+    width: 600px;
+
+    position:static;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    gap: 0;
+
+    margin-left: auto;
+    margin-right: 70px;
+
+    
+  }
+
+      /* Skills area */
+  .square {
+    width: 289px;
+    height: 289px;
+    
+
+  }
+
+  .skill-font-title {
+    font-family: 'Poppins', serif;
+    font-size: 2em;
+    color: white;
+    margin-left: 40px;
+    margin-top: 50px;
+    padding: 0;
+    letter-spacing: 2px;
+    place-self: center;
+  }
+
+  .skill-font-ul {
+    font-family: 'Poppins', serif;
+    font-size: 1.4em;
+    color: white;
+    margin-left: 30px;
+    margin-right: auto;
+    letter-spacing: 2px;
+  }
+
+  .leng-color {
+    background-color: #1c528a;
+    background-image: url(/assets/GATO.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+
+  .fram-color {
+    background-color: #e2505c;
+    background-image: url(/assets/CUADRADO.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+
+  .skill-color {
+    background-color: #febf52;
+    background-image: url(/assets/FOTO.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+
+  .dots-imagen {
+    position: relative;
+  }
+
+  .dots-imagen > img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+    /* End of skills section   --------------------------------------  */
+    /* About area end ----------------------------------------------------- */
+  
+  
+  
+
+
+    /* Contact area ------------------------------------------------------- */
+    .submit-form {
+      border: 5px solid blue;
+      height: 900px;
+      display: grid;
+      grid-template-areas: 
+      'ph1 input ph2'
+      'ph1 input ph2'
+      'footer footer footer';
+
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: 350px auto 100px;
+      position: relative;;
+    }
+
+    .contact-inputs {
+      grid-area: input;
+      border: 5px solid green;
+    }
+
+
+    /* FOOTER ------------------------------------------------------------------------- */
+    .footer-section {
+      grid-area: footer;
+      width: 100%;
+      display: inline-block;
+      
+    }
+
+    .footer-section {
+      border: 1px solid white;
+      font-family: 'Poppins', serif;
+      font-size: 2em;
+      color: white;
+      background: #1a2236;
+      padding: 0;
+
+      display: inline-flex;
+      justify-content: space-around;
+    }
+  
+    .get-my-resume {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+      color: #92dcdc;
+    }
+  
+    .get-my-resume > a {
+      color: #92dcdc;
+      display: flex;
+      align-items: center;
+      margin-left: 0;
+      text-decoration: none;
+      font-size: 0.7em;
+    }
+  
+    .get-my-resume > p {
+      margin: 10px;
+      font-size: 18px;
+      padding: 0;
+    }
+  
+    .icons {
+      width: 25%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+    }
+  
+    .icons > li > a {
+      color: rgb(255, 255, 255);
+      display: inline-flex;
+      text-decoration: none;
+    }
+  
+    .icons > li > a > i {
+      font-size: 28px;
+    }
+    /* Footer end ----------------------------------------------------------------------- */
+
+
+    /* Background photos ---------------------------------------------------------------- */
+    .photo1-desktop {
+      grid-area: ph1;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .photo2-desktop {
+      grid-area: ph2;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+    /* Background photos end ------------------------------------------------------------ */
+    
+
+
+
+
+
+
+    /* Contact area end --------------------------------------------------- */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
