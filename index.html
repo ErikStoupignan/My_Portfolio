@@ -21,10 +21,10 @@
 
     <body>
         <!-- Header section -->
-        <header>
+        <header class="header-section">
 
             <!-- Back ground photo 1 Mobil version-->
-            <div class="contain-img1 img1-before display-none ">
+            <div class="contain-img1 display-none ">
                 <img src="/assets/image_geometry_1.png" alt="Background photo" class="background-img1">
             </div>
     
@@ -35,22 +35,22 @@
                 <i class="fas fa-times dont-show"></i>
                 <nav>
                     <ul class="nav-bar">
-                    <li><a href="#">Hello</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#hello">Hello</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header> 
 
         <!-- Main section -->
-        <main>
+        <main class="main-section">
             <div class="visible-area">
 
                 <!-- Main area -->
                 <section class="main-area">
-                    <h1 class="main-name main-position">Erik Stoupignan</h1>
+                    <h1 id="hello" class="main-name main-position">Erik Stoupignan</h1>
                     <p class="main-text main-position">Hello! I am a software developer! I can help you build a product, 
                         feature or website. Taka a look of my works. If you like what you 
                         see and have a project you need coded, don’t hesitate and contact me.</p>
@@ -75,16 +75,17 @@
         </main>
 
         <!-- Proyects section -->
-        <section>
+        <section class="project-section">
 
             <div class="project desktop-project">
                 <div class="title-project">
-                    <h1 class="main-name main-project">Projects</h1>
+                    <h1 id="Portfolio" class="main-name">Projects</h1>
                 </div>
 
                 <!-- Section  #1-->
                 <div class="container section1">
-                    <img class="box1" src="/assets/Rectangle21.png" alt="Decoration photo">
+                    <img class="box1 display-none-after" src="/assets/desktop/hd1.png" alt="Decoration photo">
+                    <img class="box1 display-none" src="/assets/Rectangle21.png" alt="Decoration photo">
                     <div class="box box2">
                         <h2 class="subtitle">Project names goes here</h2>
                     </div>
@@ -253,7 +254,7 @@
             
             <!-- About -->
             <div class="about">
-                <h2>About</h2>
+                <h2 id="About">About</h2>
                 <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     , sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud 
@@ -328,9 +329,11 @@
                 <img class="photo2-desktop display-none-after" src="/assets/desktop/desk-img-9.png" alt="Background photo Right bottom"> 
 
                 <div class="contact-inputs">
-                    <h2 class="main-name">Get started</h2>
+                    <h2 id="Contact" class="main-name">Get started</h2>
                     <p class="main-text">Lorem ipsum dolor sit, 
-                        amet consectetur adipisicing elit. Itaque, alias!
+                        amet consectetur adipisicing elit. Itaque, alias! Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit. Itaque, alias! Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit. Itaque, alias! 
                     </p>
 
                     <!-- Inputs area -->
@@ -351,8 +354,7 @@
                 <!-- Here are the footer section that includes all the icons -->
                 <footer class="footer-section">
                     <div class="get-my-resume">
-                        <p>Get My Resume</p>
-                        <a href="https://github.com/ErikStoupignan"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/ErikStoupignan"><p>Get My Resume</p><i class="fas fa-external-link-alt"></i></a>
                     </div>
 
                     <ul class="icons">

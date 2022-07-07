@@ -4,8 +4,11 @@
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x:  hidden;
   }
+
+
+
 
   .visible-area {
     width: 90%;
@@ -16,12 +19,14 @@
     font-family: 'Playfair Display', serif;
     font-size: 60px;
     line-height: 60px;
+    padding: 0 auto;
+    margin: 0;
   }
   
   /* Include the main text top */
   .main-text {
     font-family: 'Poppins', sans-serif;
-    font-weight: 200px;
+    font-weight: 150px;
     font-size: 16px;
     line-height: 21px;
     letter-spacing: 3px;
@@ -34,9 +39,9 @@
   .desktop-project > div > h1 {
     background-color: white;
     height: 100%;
+    width: auto;
     padding-top: 10%;
     padding-bottom: 10%;
-    margin: 0;
   }
 
 
@@ -213,9 +218,9 @@
   }
 
   /* title area of projects */
-  .about h1 {
+  .about h2 {
     font-family: 'Playfair Display', serif;
-    margin-left: 20px;
+    display: inline-flex;
     margin-top: 30px;
     margin-bottom: 32px;
     font-weight: 182px;
@@ -246,7 +251,7 @@
     grid-area: photo;
     display: flex;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   /* Main sentence: Project name goes here */
@@ -293,13 +298,15 @@
   .ul-technologys li {
     background-color: #98dede;
     color: black;
-    padding: 3px 15px 3px 15px;
+    padding: 3px 10px 3px 10px;
   }
 
   /* Style of button "See this project" */
   .box6 a {
     text-decoration: none;
     color: white;
+    padding: 0;
+    margin: 0;
   }
 
   .buttom-arrow {
@@ -310,7 +317,7 @@
   }
 
   .buttom-arrow p {
-    border: 2px solid rgb(238, 238, 238);
+    border: 1px solid rgb(238, 238, 238);
     margin-top: 10px;
     padding: 10px;
     padding-left: 10px;
@@ -389,7 +396,7 @@
   }
 
   /* Contact Form */
-  .contact-form {
+  .contact-section {
     margin: 0%;
     padding: 0%;
   }
@@ -408,8 +415,8 @@
 
   .submit-form > div > p {
     display: flex;
-    padding: 25px 0 50px 25px;
-    margin: 0;
+    padding: 25px 20px 50px 20px;
+    margin: 0 auto;
   }
 
   .inputs-group {
@@ -477,7 +484,9 @@
     color: white;
     background: #1a2236;
     height: 120px;
-    padding: 0;
+    padding-bottom: 10px;
+    margin:0;
+    width: auto;
   }
 
   .get-my-resume {
@@ -502,6 +511,10 @@
     padding: 0;
   }
 
+  .get-my-resume > a > i {
+    padding-left: 5px;
+  }
+
   .icons {
     display: flex;
     flex-direction: row;
@@ -518,19 +531,60 @@
   }
 
   .icons > li > a > i {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   .ul-container ul a {
     text-decoration: none;
   }
+
+  .contain-img1 {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    height: auto;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* DESKTOP VERSION                                                             */
 @media only screen and (min-width: 770px) {
-
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
   /* Nav-bar version */
   .respmenu i, .respmenu input {
@@ -581,7 +635,7 @@
     .visible-area {
       width: 100%;
       display: inline-flex;
-      padding: 0%;
+      padding: 0;
       margin: 0%;
     }
   
@@ -837,7 +891,6 @@
       flex-direction: column;
       position: static;
       justify-content: left;
-      align-items: ;
     }
 
     .about h2 {
@@ -939,12 +992,9 @@
     /* About area end ----------------------------------------------------- */
   
   
-  
-
-
     /* Contact area ------------------------------------------------------- */
     .submit-form {
-      border: 5px solid blue;
+
       height: 900px;
       display: grid;
       grid-template-areas: 
@@ -957,10 +1007,126 @@
       position: relative;;
     }
 
+    /* Inputs area ------------------------------------------------------------------ */
     .contact-inputs {
       grid-area: input;
-      border: 5px solid green;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
+    .contact-inputs > h2 {
+      grid-area: input;
+
+      margin: 2% auto 2% auto;
+      font-size: 6em;
+    }
+
+    .contact-inputs > p {
+      grid-area: input;
+      margin:0 15% 3% 15%;
+      width: 50%;
+    }
+
+    /* Inputs setup ------------------------------------- */
+    .inputs-group {
+      width: 50%;
+      height: 45%;
+      position: relative;
+
+
+    }
+
+    .name-input {
+      height: 50px;
+      width: 42%;
+      margin: 7px 0 7px auto;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      border-radius: 5px;
+      border-color: rgba(48, 42, 42, 0.493);
+
+      font-family: 'Poppins', serif;
+      font-size: 1em;
+      text-align: left;
+      padding-top: 20px;
+      padding-left: 15px;
+    }
+
+    .email-input {
+      border-color: rgba(48, 42, 42, 0.493);
+      height: 50px;
+      width: 42%;
+      margin: 7px auto 7px 0;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      border-radius: 5px;
+      border-color: rgba(48, 42, 42, 0.493);
+      font-family: 'Poppins', serif;
+      font-size: 1em;
+      text-align: left;
+      padding-top: 20px;
+      padding-left: 15px;
+    }
+
+    .message-input {
+      border: 1px solid rgba(48, 42, 42, 0.493);
+      height: 50px;
+      width: 100%;
+      height: 140px;
+
+      position: absolute;
+      top: 120px;
+
+      border-radius: 5px;
+      border-color: rgba(48, 42, 42, 0.493);
+      font-family: 'Poppins', serif;
+      font-size: 1em;
+      text-align: left;
+      padding-top: 20px;
+    }
+
+    .start-collaboration-submit button {
+      background-color: #1a2236;
+      color: white;
+
+      width: 45%;
+      height: 50px;
+
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto 0 auto;
+      
+      margin-top: 40px;
+    }
+
+    ::placeholder {
+      color: rgba(56, 53, 53, 0.493);
+      position: absolute;
+      left: 5%;
+      top: 0;
+      font-family: 'Poppins', serif;
+      font-size: 1em;
+    }
+
+
+
+
+
+
+    /* Inputs area end -------------------------------------------------------------- */
 
 
     /* FOOTER ------------------------------------------------------------------------- */
@@ -1004,6 +1170,10 @@
       margin: 10px;
       font-size: 18px;
       padding: 0;
+    }
+
+    .get-my-resume > a > i {
+      padding-left: 10px;
     }
   
     .icons {
