@@ -21,47 +21,71 @@
 
     <body>
         <!-- Header section -->
-        <header>
-            <!-- Hamburguer button -->
-            <nav class="nav-bar">
-                <button type="button" title="Menu" class="option-menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
+        <header class="header-section">
 
-            <!-- Back ground photo 1 -->
-            <div class="contain-img1">
+            <!-- Back ground photo 1 Mobil version-->
+            <div class="contain-img1 display-none ">
                 <img src="/assets/image_geometry_1.png" alt="Background photo" class="background-img1">
             </div>
-        </header>
+    
+            <!-- Hamburguer Menu with help of: www.espai.es -->
+            <div class="respmenu">
+                <input type="checkbox" class="dont-show"> 
+                <i class="fas fa-bars dont-show"></i>
+                <i class="fas fa-times dont-show"></i>
+                <nav>
+                    <ul class="nav-bar">
+                    <li><a href="#hello">Hello</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header> 
 
         <!-- Main section -->
-        <main>
+        <main class="main-section">
             <div class="visible-area">
-                <section>
-                    <h1 class="main-name">Erik Stoupignan</h1>
-                    <p class="main-text">Hello! I am a software developer! I can help you build a product, 
+
+                <!-- Main area -->
+                <section class="main-area">
+                    <h1 id="hello" class="main-name main-position">Erik Stoupignan</h1>
+                    <p class="main-text main-position">Hello! I am a software developer! I can help you build a product, 
                         feature or website. Taka a look of my works. If you like what you 
                         see and have a project you need coded, don’t hesitate and contact me.</p>
+        
+                    <!-- Collaboration button -->
+                    <div class="start-collaboration">
+                            <a href="#contact">Start collaboration</a>
+                    </div>
+
                 </section>
-                <div class="start-collaboration">
-                        <a href="#contact">Start collaboration</a>
+
+                <!-- Main picture -->
+                <div class="contain-img1-desktop display-none-after">
+                    <img src="/assets/desktop/desk-img-1.png" alt="Background-desktop-version">
                 </div>
             </div>
             
-            <div class="prueba">
+
+            <div class="prueba display-none">
                 <img src="/assets/image_geometry_2.png" alt="Decorative photo" class="background-img2">
             </div>
         </main>
 
         <!-- Proyects section -->
-        <section class="work-project">
-            <h1 class="main-name">Projects</h1>
-            <div class="project">
+        <section class="project-section">
+
+            <div class="project desktop-project">
+                <div class="title-project">
+                    <h1 id="Portfolio" class="main-name">Projects</h1>
+                </div>
 
                 <!-- Section  #1-->
-                <div class="container">
-                    <img class="box1" src="/assets/Rectangle21.png" alt="Decoration photo">
+                <div class="container section1">
+                    <img class="box1 display-none-after" src="/assets/desktop/hd1.png" alt="Decoration photo">
+                    <img class="box1 display-none" src="/assets/Rectangle21.png" alt="Decoration photo">
                     <div class="box box2">
                         <h2 class="subtitle">Project names goes here</h2>
                     </div>
@@ -86,7 +110,7 @@
                 </div>
 
                 <!-- Section  #2-->
-                <div class="container">
+                <div class="container section2">
                     <img class="box1" src="/assets/Rectangle21-2.png" alt="Decoration photo">
                     <div class="box box2">
                         <h2 class="subtitle">Project names goes here</h2>
@@ -112,7 +136,7 @@
                 </div>
 
                 <!-- Section  #3-->
-                <div class="container">
+                <div class="container section3">
                     <img class="box1" src="/assets/Rectangle21(1).png" alt="Decoration photo">
                     <div class="box box2">
                         <h2 class="subtitle">Project names goes here</h2>
@@ -138,7 +162,7 @@
                 </div>
 
                 <!-- Section  #4-->
-                <div class="container">
+                <div class="container section4">
                     <img class="box1" src="/assets/Rectangle21(2).png" alt="Decoration photo">
                     <div class="box box2">
                         <h2 class="subtitle">Project names goes here</h2>
@@ -164,7 +188,7 @@
                 </div>
 
                 <!-- Section  #5-->
-                <div class="container">
+                <div class="container section5">
                     <img class="box1" src="/assets/Rectangle21(3).png" alt="Decoration photo">
                     <div class="box box2">
                         <h2 class="subtitle">Project names goes here</h2>
@@ -190,7 +214,7 @@
                 </div>
 
                 <!-- Section  #6-->
-                <div class="container">
+                <div class="container section6">
                     <img class="box1" src="/assets/Rectangle21(4).png" alt="Decoration photo">
                     <div class="box box2">
                         <h2 class="subtitle">Project names goes here</h2>
@@ -215,30 +239,38 @@
                     </div>
                 </div>
 
+                <!-- Images for desktop version -->
+                <img class="imag-grid-1 display-none-after" src="assets/desktop/desk-img-3.png" alt="Background with colors-1">
+                <img class="imag-grid-2 display-none-after" src="assets/desktop/desk-img-4.png" alt="Background with colors-2" >
+                <img class="imag-grid-3 display-none-after" src="assets/desktop/desk-img-5.png" alt="Background with colors-3" >
+                <img class="imag-grid-4 display-none-after" src="assets/desktop/desk-img-6.png" alt="Background with colors-4" >
+                
+
             </div>
         </section>
 
         <!-- About me Section-->
-        <section>
+        <section class="about-section">
+            
             <!-- About -->
             <div class="about">
-                <h1>About</h1>
+                <h2 id="About">About</h2>
                 <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit
                     , sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud 
                     exercitation ullamco laboris nisi ut aliquip ea 
                     eiusmod
                 </p>
-            </div>
 
-            <!-- Gey my CV -->
-            <div class="">
-                <div class="start-collaboration">
-                    <a class="cv_link" href="https://github.com/ErikStoupignan">
-                        <p>Get my CV
-                        <img class="arrow" src="/assets/downloadicon.png" alt="Download Icon">
-                        </p>
-                    </a>
+                <!-- Gey my CV -->
+                <div class="">
+                    <div class="start-collaboration">
+                        <a class="cv_link" href="https://github.com/ErikStoupignan">
+                            <p>Get my CV
+                            <img class="arrow" src="/assets/downloadicon.png" alt="Download Icon">
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -273,43 +305,56 @@
                         <li>Terminal</li>
                     </ul>
                 </div>
+
+                <!-- Imagen for desktop version -->
+                <div class="square dots-imagen display-none-after">
+                    <img src="/assets/desktop/desk-img-7.png" alt="dots-imagen">
+                </div>
             </div>
         </section>
 
         <!-- Contact form -->
-        <section>
+        <section class="contact-section">
             <!-- Photo at the top -->
             <div class="contain-img1">
-                <img class="photo-2 " src="/assets/image_geometry_1.png" alt="Background photo">
+                <img class="photo-2 display-none" src="/assets/image_geometry_1.png" alt="Background photo">
             </div>
 
             <!-- Get stared -->
             <div class="submit-form">
-                <h2 class="main-name">Get started</h2>
-                <p class="main-text">Lorem ipsum dolor sit, 
-                    amet consectetur adipisicing elit. Itaque, alias!
-                </p>
+                <!-- Top left background photo -->
+                <img class="photo1-desktop display-none-after" src="/assets/desktop/desk-img-8.png" alt="Background photo left top" >
 
-                <!-- Inputs area -->
-                <form class="inputs-group" 
-                action="https://formspree.io/f/mrgjwpka"
-                method="POST"
-                enctype="multipart/form-data" id="contact">
-                    <input type="text"  name="name" placeholder="Your name" class="name-input" maxlength="30" required>
-                    <input type="email" name="email" placeholder="Your email" class="email-input" required>
-                    <textarea name="Additional-text" placeholder="Enter your message here..." class="message-input" maxlength="500" required></textarea>
-                
-                    <div class="start-collaboration-submit">
-                            <button type="submit">Start collaboration</button>
-                    </div>
-                </form>
-                
+                <!-- Bottom right background photo  -->
+                <img class="photo2-desktop display-none-after" src="/assets/desktop/desk-img-9.png" alt="Background photo Right bottom"> 
+
+                <div class="contact-inputs">
+                    <h2 id="Contact" class="main-name">Get started</h2>
+                    <p class="main-text">Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit. Itaque, alias! Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit. Itaque, alias! Lorem ipsum dolor sit, 
+                        amet consectetur adipisicing elit. Itaque, alias! 
+                    </p>
+
+                    <!-- Inputs area -->
+                    <form class="inputs-group" 
+                    action="https://formspree.io/f/mrgjwpka"
+                    method="POST"
+                    enctype="multipart/form-data" id="contact">
+                        <input type="text"  name="name" placeholder="Your name" class="name-input" maxlength="30" required>
+                        <input type="email" name="email" placeholder="Your email" class="email-input" required>
+                        <textarea name="Additional-text" placeholder="Enter your message here..." class="message-input" maxlength="500" required></textarea>
+                    
+                        <div class="start-collaboration-submit">
+                                <button type="submit">Start collaboration</button>
+                        </div>
+                    </form>
+                </div>
 
                 <!-- Here are the footer section that includes all the icons -->
                 <footer class="footer-section">
                     <div class="get-my-resume">
-                        <p>Get My Resume</p>
-                        <a href="https://github.com/ErikStoupignan"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/ErikStoupignan"><p>Get My Resume</p><i class="fas fa-external-link-alt"></i></a>
                     </div>
 
                     <ul class="icons">
