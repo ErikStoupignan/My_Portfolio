@@ -1,4 +1,4 @@
-/* This first edition is a mobile version */
+/* Mobile version -------------------------------------------------------------*/
 @media only screen and (max-width: 770px) {
   body {
     margin: 0;
@@ -495,6 +495,7 @@
   }
 }
 
+/* Desktop version --------------------------------------------------------- */
 @media only screen and (min-width: 770px) {
   body {
     margin: 0;
@@ -529,13 +530,24 @@
     margin: 0;
   }
 
+  /* Practice with animations - transitions */
   .respmenu > nav > ul > li {
+    padding: 15px 40px 15px 40px;
     list-style: none;
+    font-size: 16px;
+    transition-property: font-size;
+    transition-duration: 1s;
+    transition-delay: 0s;
+
+    background-color: none;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 0s;
   }
 
   .respmenu > nav > ul > li:hover {
     font-size: 50px;
-    transition: 2s ease-out;
+    background-color: rgba(189, 189, 189, 0.671);
   }
 
   .display-none {
@@ -551,7 +563,7 @@
 
   .main-area {
     width: auto;
-    padding-top: 10%;
+    padding-top: 8%;
     padding-left: 10%;
     padding-right: 5%;
     background-image: url(assets/desktop/desk-img-2.png);
@@ -563,16 +575,16 @@
 
   .main-name {
     font-family: "Playfair Display", serif;
-    font-weight: 400;
     font-size: 5vw;
+    max-width: 75%;
   }
 
   .main-text {
     font-family: "Poppins", sans-serif;
-    font-weight: 200px;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1vw;
+    line-height: auto;
     letter-spacing: 3px;
+    max-width: 75%;
   }
 
   .start-collaboration {
@@ -596,7 +608,7 @@
   .contain-img1-desktop {
     display: flex;
     justify-content: right;
-    max-width: 800px;
+    max-width: 40%;
     flex: auto;
   }
 
@@ -1052,6 +1064,6 @@
   .respmenu > nav > ul > li > a {
     text-decoration: none;
     color: #1a2236;
-    font-size: 16px;
+    font-size: 1.5vw;
   }
 }
