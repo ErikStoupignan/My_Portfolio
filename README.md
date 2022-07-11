@@ -5,7 +5,6 @@
  In my portfolio, you can find evidence of my work as a web developer.
 
 
-
 ## Built With
 
 - HTML
@@ -24,7 +23,8 @@ To get a local copy up and running follow these simple example steps.
 - If everything was ok, your terminal will send to you information about your download. 
 - Finally, you could go to Visual Studio Code and open the folder with your new repository and start to work.
 
-
+## Deployment
+This website can be viewed at: https://erikstoupignan.github.io/
 
 
 ## Authors
