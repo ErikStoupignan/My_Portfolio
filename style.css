@@ -628,23 +628,34 @@
     display: none;
   }
 
+  /* Grid project -------------------------------------------------- */
   .desktop-project {
     margin-top: 100px;
+    margin-bottom: 100px;
+
+    max-width: 1330px;
+
+    margin-left: auto;
+    margin-right: auto;
+
     display: grid;
     grid-template-areas:
-      "title p1 p1"
-      "p2 img1 p6"
-      "p3 p3  p5"
-      ". . img2"
-      "img3 p4 .";
-    grid-template-columns: 3fr 3fr 3fr;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+    "title title p1 p1 p1 p1"
+    "p2	 p2 img1 img1 p6 p6"
+    "p3	 p3 p3 img2 p5 p5"
+    "img3 . img4 p4 p4 ."
+    ". . img4 p4 p4 .";;
+    grid-template-columns: 17% 17% 17% 17% 17% 16%;
+    grid-template-rows: auto auto auto auto 135px;
+
   }
 
   /* title project */
   .desktop-project > .title-project {
-    width: 100%;
+    grid-area: title;
+    width: 85%;
     height: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -652,135 +663,132 @@
     background-repeat: no-repeat;
     background-position-y: top;
     background-position-x: right;
+    background-size: 30%;
   }
 
   .desktop-project > .title-project > h1 {
-    grid-area: title;
     transform: rotate(-90deg);
-    position: relative;
-    margin: auto 150px auto auto;
-    font-size: 10em;
-  }
-
-  .section1 > img {
-    width: 100%;
-  }
-
-  .dots-imagen > img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-
-  .desktop-project > .title-project > img {
-    position: absolute;
-    margin: 0 0 100 100;
+    font-size: 5vw;
   }
 
   /* Section 1 */
   .section1 {
     grid-area: p1;
     display: flex;
-    width: auto;
-    padding: 0;
-    margin: 0;
+    justify-content: center;
+  }
+
+  .section1 > img {
+    width: 100%;
+    max-width: 960px;
+    min-width: 600px;
   }
 
   /* Section 2 */
   .section2 {
     grid-area: p2;
     display: flex;
-    align-items: flex-star;
+    justify-content: center;
+  }
+
+  .section2 > img {
     width: 100%;
-    height: 90%;
-    padding-top: 10%;
-    margin: 0;
+    max-width: 465px;
+    padding-top: 52px;
   }
 
   /* Section 3 */
   .section3 {
     grid-area: p3;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    width: 100;
-    height: 142%;
-    grid-column: 1 / 3;
+  }
+
+  .section3 img {
+    width: 100%;
   }
 
   /* Section 4 */
   .section4 {
     grid-area: p4;
-    padding-top: 14%;
-    padding-left: 33%;
-    display: flex;
-    margin: 0;
-    width: 80;
-    height: 100%;
-    grid-row: 4/5;
-    grid-column: 2 / 4;
+  }
+
+  .section4 img {
+    width: 100%;
   }
 
   /* Section 5 */
   .section5 {
     grid-area: p5;
-    display: flex;
-    width: auto;
-    height: 100%;
-    padding-bottom: 30%;
-    margin: 0;
-    grid-column: 2.5 / 4;
+    position: relative;
+  }
+
+  .section5 img {
+    width: 100%;
+    max-width: 465px;
+    position: absolute;
+    top: -65px;
   }
 
   /* Section 6 */
   .section6 {
     grid-area: p6;
-    display: flex;
-    width: auto;
-    padding: 0;
-    margin: 0;
-    grid-column: auto;
   }
 
+  .section6 img {
+    width: 100%;
+    max-width: 465px;
+    max-height: 270px;
+    
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Backround-images---------------------------- */
   .imag-grid-1 {
     grid-area: img1;
-    display: flex;
     width: 100%;
-    padding: 0;
-    margin: 0;
+    height: 100%;
+    max-width: 440px;
+    margin: 0 auto;
   }
 
   .imag-grid-2 {
     grid-area: img2;
-    display: flex;
-    justify-content: right;
-    margin: 0 0 0 auto;
-    width: 67%;
-    height: 40%;
-    grid-column: 2 / 4;
+    z-index: 2;
+    position: relative;
+  }
+
+  /* Red square on the left */
+  .imag-grid-2 > .desk-img-2-1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+  }
+
+  /* Two figures on the right */
+  .imag-grid-2 > .desk-img-2-2 {
+    position: absolute;
+    left: 170%;
+    bottom: 6vh;
+    width: 120%;
   }
 
   .imag-grid-3 {
     grid-area: img3;
-    padding-top: 28%;
-    display: flex;
-    margin: 0;
-    width: 40;
-    height: 15%;
-    grid-row: 4/6;
+    width: 100%;
+    max-width: 212px;
   }
 
   .imag-grid-4 {
     grid-area: img4;
-    padding-top: 14%;
-    padding-left: 24%;
-    height: 12%;
-    display: flex;
-    margin: 0;
-    grid-row: 4/6;
-    grid-column: 2 / 4;
+    width: 100%;
+    max-width: 86px;
+    min-width: 80px;
+    margin-right: 0;
+    margin-left: auto;
   }
 
+  /* About section start------------------------------------------------------ */
   .about-section {
     width: 100%;
     position: relative;
@@ -789,6 +797,12 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 150px;
+  }
+
+  .dots-imagen > img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 
   .about-section .about {
