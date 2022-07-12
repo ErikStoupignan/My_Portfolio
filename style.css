@@ -36,7 +36,7 @@ html {
     display: none !important;
   }
 
-  .desktop-project > div > h1 {
+  .desktop-project > div > h2 {
     background-color: white;
     height: 100%;
     width: auto;
@@ -506,6 +506,10 @@ html {
     padding: 0;
   }
 
+  *:focus {
+    background-color: rgba(238, 238, 94, 0.473);
+  }
+
   .respmenu i,
   .respmenu input {
     display: none;
@@ -664,7 +668,7 @@ html {
     background-size: 30%;
   }
 
-  .desktop-project > .title-project > h1 {
+  .desktop-project > .title-project > h2 {
     transform: rotate(-90deg);
     font-size: 5vw;
   }
@@ -872,14 +876,14 @@ html {
   }
 
   .fram-color {
-    background-color: #e2505c;
+    background-color: #83353b;
     background-image: url(/assets/CUADRADO.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
   }
 
   .skill-color {
-    background-color: #febf52;
+    background-color: #6a542e;
     background-image: url(/assets/FOTO.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
@@ -894,10 +898,9 @@ html {
     display: grid;
     grid-template-areas:
       "ph1 input ph2"
-      "ph1 input ph2"
-      "footer footer footer";
+      "ph1 input ph2";
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 350px auto 100px;
+    grid-template-rows: 350px auto;
     position: relative;
   }
 
@@ -924,6 +927,11 @@ html {
     width: 50%;
     height: 45%;
     position: relative;
+  }
+
+  .inputs-group > label {
+    position: absolute;
+    visibility: hidden;
   }
 
   .name-input {
