@@ -11,6 +11,27 @@ html {
     overflow-x: hidden;
   }
 
+
+  /* Menu for mobile version! ----------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .visible-area {
     width: 90%;
     margin: 0 auto;
@@ -64,29 +85,38 @@ html {
   .respmenu i,
   .respmenu input {
     display: block;
+    border: 1px solid #000;
   }
 
   /* format of all the anchors in the list */
-  .respmenu a {
+   .respmenu a {
     font-family: Poppins, sans-serif;
-    color: white;
+    font-size: 2rem;
+    color: rgb(7, 7, 7);
     text-decoration: none;
     display: block;
     padding: 10px;
-    border-bottom: 2px solid #456789;
-    max-width: 100px;
-    background: #234567;
-    text-align: center;
-  }
+  } 
 
   .respmenu li {
     list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .respmenu ul {
+    list-style: none;
+    margin: 50% 0 auto 0;
+    padding: 0;
+
   }
 
   /* Position of the hamburguer on the screen */
   .respmenu input[type="checkbox"],
   .respmenu .fa-bars,
   .respmenu .fa-times {
+    border: 1px solid #000;
     position: absolute;
     right: 0;
     top: 10px;
@@ -108,24 +138,27 @@ html {
 
   /* Control of the nav-bar principal */
   .respmenu {
-    color: rgb(10, 10, 10);
-    position: relative;
-    display: block;
-    width: 200px;
-    margin-left: auto;
-    margin-right: 20px;
+    color: rgb(9, 9, 9);
+    border: 1px solid rgb(236, 4, 4);
+    position: fixed;
+    display: flex;
+    width: 100%;
   }
 
   /* Don't let see the list items */
   .respmenu nav {
-    display: none;
-    margin-right: 70px;
+    border: 5px solid blue;
+    width: 100%;
+    display: none; 
   }
 
   /* Show the list when clic on the icon  xEDITEDx */
   .respmenu input:checked ~ nav {
-    /* display: block; */
-    color: white;
+    display: block;
+    color: rgb(21, 192, 80);
+    border: 5px solid #000;
+    background-color: rgb(255, 255, 255, 1);
+    height: 100vh;
   }
 
   /* when show the list, delet the icon of hamburguer */
@@ -496,6 +529,7 @@ html {
     justify-content: left;
     width: 100%;
     height: auto;
+
   }
 }
 
