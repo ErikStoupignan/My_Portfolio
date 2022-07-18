@@ -36,7 +36,18 @@ html {
     display: none !important;
   }
 
-  .desktop-project > div > h1 {
+  /* title area of projects */
+  .about h2 {
+    font-family: "Playfair Display", serif;
+    display: inline-flex;
+    margin-top: 30px;
+    margin-bottom: 32px;
+    font-weight: 182px;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .desktop-project > div > h2 {
     background-color: white;
     height: 100%;
     width: auto;
@@ -168,17 +179,6 @@ html {
   /* All prject container */
   .project {
     background-color: #1a2236;
-  }
-
-  /* title area of projects */
-  .about h2 {
-    font-family: "Playfair Display", serif;
-    display: inline-flex;
-    margin-top: 30px;
-    margin-bottom: 32px;
-    font-weight: 182px;
-    font-size: 50px;
-    line-height: 50px;
   }
 
   /* Class of every Section on the */
@@ -348,7 +348,7 @@ html {
     background-position: 100% 100%;
   }
 
-  /* Contact Form */
+  /* Contact Form  ARREGLAR ETIQUETAS */
   .contact-section {
     margin: 0%;
     padding: 0%;
@@ -504,6 +504,10 @@ html {
   body {
     margin: 0;
     padding: 0;
+  }
+
+  *:focus {
+    background-color: rgba(238, 238, 94, 0.473);
   }
 
   .respmenu i,
@@ -664,7 +668,24 @@ html {
     background-size: 30%;
   }
 
-  .desktop-project > .title-project > h1 {
+  .about h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 400px;
+    font-size: 110px;
+    line-height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-self: left;
+  }
+
+  .contact-inputs > h2 {
+    grid-area: input;
+    margin: 2% auto 2% auto;
+    font-size: 6em;
+  }
+
+  .desktop-project > .title-project > h2 {
     transform: rotate(-90deg);
     font-size: 5vw;
   }
@@ -811,17 +832,6 @@ html {
     justify-content: left;
   }
 
-  .about h2 {
-    font-family: "Playfair Display", serif;
-    font-weight: 400px;
-    font-size: 110px;
-    line-height: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-self: left;
-  }
-
   .about p {
     font-family: Poppins, serif;
   }
@@ -872,14 +882,14 @@ html {
   }
 
   .fram-color {
-    background-color: #e2505c;
+    background-color: #83353b;
     background-image: url(/assets/CUADRADO.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
   }
 
   .skill-color {
-    background-color: #febf52;
+    background-color: #6a542e;
     background-image: url(/assets/FOTO.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
@@ -894,10 +904,9 @@ html {
     display: grid;
     grid-template-areas:
       "ph1 input ph2"
-      "ph1 input ph2"
-      "footer footer footer";
+      "ph1 input ph2";
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 350px auto 100px;
+    grid-template-rows: 350px auto;
     position: relative;
   }
 
@@ -906,12 +915,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .contact-inputs > h2 {
-    grid-area: input;
-    margin: 2% auto 2% auto;
-    font-size: 6em;
   }
 
   .contact-inputs > p {
@@ -924,6 +927,11 @@ html {
     width: 50%;
     height: 45%;
     position: relative;
+  }
+
+  .inputs-group > label {
+    position: absolute;
+    visibility: hidden;
   }
 
   .name-input {
