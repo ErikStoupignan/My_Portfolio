@@ -11,27 +11,6 @@ html {
     overflow-x: hidden;
   }
 
-
-  /* Menu for mobile version! ----------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .visible-area {
     width: 90%;
     margin: 0 auto;
@@ -81,13 +60,6 @@ html {
     width: 100%;
   }
 
-  /* Let see the icons again */
-  .respmenu i,
-  .respmenu input {
-    display: block;
-    border: 1px solid #000;
-  }
-
   /* format of all the anchors in the list */
    .respmenu a {
     font-family: Poppins, sans-serif;
@@ -109,37 +81,17 @@ html {
     list-style: none;
     margin: 50% 0 auto 0;
     padding: 0;
-
-  }
-
-  /* Position of the hamburguer on the screen */
-  .respmenu input[type="checkbox"],
-  .respmenu .fa-bars,
-  .respmenu .fa-times {
-    border: 1px solid #000;
-    position: absolute;
-    right: 0;
-    top: 10px;
-    width: 48px;
-    height: 48px;
   }
 
   /* Make a responsive hamburguer and select the size */
   .respmenu .fa-bars,
   .respmenu .fa-times {
     font-size: 48px;
-    pointer-events: none;
-  }
-
-  /* Control de opacity, with this let see the icons */
-  .respmenu input[type="checkbox"] {
-    opacity: 0;
   }
 
   /* Control of the nav-bar principal */
   .respmenu {
     color: rgb(9, 9, 9);
-    border: 1px solid rgb(236, 4, 4);
     position: fixed;
     display: flex;
     width: 100%;
@@ -531,6 +483,14 @@ html {
     height: auto;
 
   }
+
+  #burguer-icon {
+    position: absolute;
+    right: 8%;
+    top: 30px;
+    font-size: 3rem;                                        
+    transition: all 0.1s ease-in;
+  }
 }
 
 /* Desktop version ----------------------------------------------------------------------------------------------------------------------- */
@@ -563,7 +523,6 @@ html {
     justify-content: center;
     align-items: center;
     background-color: rgba(128, 128, 128, 0.363);
-    z-index: 999;
   }
 
   .respmenu > nav > ul {
@@ -1119,4 +1078,95 @@ html {
     color: #1a2236;
     font-size: 1.5vw;
   }
+
+  #modal-menu {
+    display: none !important;
+  }
+}
+
+/* Menu flotante! --------------------------------------------------- */
+#modal-menu {
+  background-color: white;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+/* icon x */
+#modal-menu i{
+  position: absolute;
+  right: 8%;
+  top: 2%;
+  font-size: 4rem;                                        
+  transition: all 0.1s ease-in;
+}
+
+#modal-menu i:hover{
+ transform: scale(1.2);
+ color: rgb(96, 96, 209);
+}
+
+/* Imagenes classes */
+.mf-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.mf-top {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  z-index: -1;
+}
+
+/* Position of the list elements */
+.modal-hamburguer {
+  position: absolute;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  top: 40%;
+}
+
+.modal-hamburguer {
+  background-image: url(/assets/floatmenu/dots.png);
+  background-repeat: no-repeat;
+  background-position: 15% 100%;
+  background-size: 18%;
+
+  list-style: none;
+  top: 20%;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 100px;
+}
+
+
+.modal-hamburguer li {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  transition: all 0.1s;
+}
+
+.modal-hamburguer li a {
+  text-decoration: none;
+  margin: 0;
+  font-family: Poppins, sans;
+  color:rgb(7, 7, 7)
+}
+
+.modal-hamburguer li:hover {
+  transform: scale(1.2);
+}
+
+.modal-hamburguer a:hover {
+  color:#3d8add
 }
