@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 /* Mobile version ------------------------------------------------------------- */
 @media only screen and (max-width: 770px) {
   body {
@@ -25,7 +29,6 @@ html {
 
   /* Include the main text top */
   .main-text {
-    font-family: "Poppins", sans-serif;
     font-weight: 150px;
     font-size: 16px;
     line-height: 21px;
@@ -62,7 +65,6 @@ html {
 
   /* format of all the anchors in the list */
    .respmenu a {
-    font-family: Poppins, sans-serif;
     font-size: 2rem;
     color: rgb(7, 7, 7);
     text-decoration: none;
@@ -134,7 +136,6 @@ html {
     background-color: #1a2236;
     width: 95%;
     height: 50px;
-    font-family: "Poppins", sans-serif;
     font-size: 16px;
     margin: 40px auto 40px auto;
     display: flex;
@@ -180,7 +181,6 @@ html {
 
   /* General style for letters */
   .box {
-    font-family: Poppins, sans-serif;
     color: white;
   }
 
@@ -291,7 +291,6 @@ html {
   }
 
   .skill-font-title {
-    font-family: "Poppins", serif;
     font-size: 2em;
     color: white;
     margin-left: 40px;
@@ -302,7 +301,6 @@ html {
   }
 
   .skill-font-ul {
-    font-family: "Poppins", serif;
     font-size: 1.4em;
     color: white;
     margin-left: 30px;
@@ -374,7 +372,6 @@ html {
     margin: 7px 0 7px 0;
     border-radius: 5px;
     border-color: rgba(48, 42, 42, 0.493);
-    font-family: "Poppins", serif;
     font-size: 1em;
     text-align: left;
     padding-top: 20px;
@@ -386,7 +383,6 @@ html {
     margin: 7px 0 7px 0;
     border-radius: 5px;
     border-color: rgba(48, 42, 42, 0.493);
-    font-family: "Poppins", serif;
     font-size: 1em;
     text-align: left;
     padding-top: 20px;
@@ -398,7 +394,6 @@ html {
     color: white;
     width: 95%;
     height: 50px;
-    font-family: "Poppins", sans-serif;
     font-size: 16px;
     margin: 40px auto 40px auto;
     display: flex;
@@ -412,7 +407,6 @@ html {
     position: absolute;
     left: 5%;
     top: 0;
-    font-family: "Poppins", serif;
     font-size: 1em;
   }
 
@@ -423,7 +417,6 @@ html {
   }
 
   .footer-section {
-    font-family: "Poppins", serif;
     font-size: 2em;
     color: white;
     background: #1a2236;
@@ -512,7 +505,6 @@ html {
   .respmenu {
     width: auto;
     height: 100px;
-    font-family: "Poppins", sans-serif;
     background-color: #dddfe600;
   }
 
@@ -578,7 +570,6 @@ html {
   }
 
   .main-text {
-    font-family: "Poppins", sans-serif;
     font-size: 1vw;
     line-height: auto;
     letter-spacing: 3px;
@@ -589,7 +580,6 @@ html {
     background-color: #1a2236;
     width: 55%;
     height: 50px;
-    font-family: "Poppins", sans-serif;
     font-size: 16px;
     margin: 40px auto 40px 0;
     display: flex;
@@ -825,10 +815,6 @@ html {
     justify-content: left;
   }
 
-  .about p {
-    font-family: Poppins, serif;
-  }
-
   .about-section .skills {
     width: 600px;
     position: static;
@@ -848,7 +834,6 @@ html {
   }
 
   .skill-font-title {
-    font-family: "Poppins", serif;
     font-size: 2em;
     color: white;
     margin-left: 40px;
@@ -859,7 +844,6 @@ html {
   }
 
   .skill-font-ul {
-    font-family: "Poppins", serif;
     font-size: 1.4em;
     color: white;
     margin-left: 30px;
@@ -936,7 +920,6 @@ html {
     top: 0;
     border-radius: 5px;
     border-color: rgba(48, 42, 42, 0.493);
-    font-family: "Poppins", serif;
     font-size: 1em;
     text-align: left;
     padding-top: 20px;
@@ -952,7 +935,6 @@ html {
     right: 0;
     top: 0;
     border-radius: 5px;
-    font-family: "Poppins", serif;
     font-size: 1em;
     text-align: left;
     padding-top: 20px;
@@ -967,7 +949,6 @@ html {
     top: 120px;
     border-radius: 5px;
     border-color: rgba(48, 42, 42, 0.493);
-    font-family: "Poppins", serif;
     font-size: 1em;
     text-align: left;
     padding-top: 20px;
@@ -978,7 +959,6 @@ html {
     color: white;
     width: 45%;
     height: 50px;
-    font-family: "Poppins", sans-serif;
     font-size: 16px;
     position: absolute;
     bottom: 0;
@@ -993,7 +973,6 @@ html {
     position: absolute;
     left: 5%;
     top: 0;
-    font-family: "Poppins", serif;
     font-size: 1em;
   }
 
@@ -1001,7 +980,6 @@ html {
     grid-area: footer;
     width: 100%;
     border: 1px solid white;
-    font-family: "Poppins", serif;
     font-size: 2em;
     color: white;
     background: #1a2236;
@@ -1159,7 +1137,6 @@ html {
 .modal-hamburguer li a {
   text-decoration: none;
   margin: 0;
-  font-family: Poppins, sans;
   color:rgb(7, 7, 7)
 }
 
