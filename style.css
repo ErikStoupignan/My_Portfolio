@@ -64,13 +64,13 @@ body {
   }
 
   /* format of all the anchors in the list */
-   .respmenu a {
+  .respmenu a {
     font-size: 2rem;
     color: rgb(7, 7, 7);
     text-decoration: none;
     display: block;
     padding: 10px;
-  } 
+  }
 
   .respmenu li {
     list-style: none;
@@ -103,7 +103,7 @@ body {
   .respmenu nav {
     border: 5px solid blue;
     width: 100%;
-    display: none; 
+    display: none;
   }
 
   /* Show the list when clic on the icon  xEDITEDx */
@@ -474,14 +474,13 @@ body {
     justify-content: left;
     width: 100%;
     height: auto;
-
   }
 
   #burguer-icon {
     position: absolute;
     right: 8%;
     top: 30px;
-    font-size: 3rem;                                        
+    font-size: 3rem;                                
     transition: all 0.1s ease-in;
   }
 }
@@ -1074,17 +1073,17 @@ body {
 }
 
 /* icon x */
-#modal-menu i{
+#modal-menu i {
   position: absolute;
   right: 8%;
   top: 2%;
-  font-size: 4rem;                                        
+  font-size: 4rem;                               
   transition: all 0.1s ease-in;
 }
 
-#modal-menu i:hover{
- transform: scale(1.2);
- color: rgb(96, 96, 209);
+#modal-menu i:hover {
+  transform: scale(1.2);
+  color: rgb(96, 96, 209);
 }
 
 /* Imagenes classes */
@@ -1103,27 +1102,23 @@ body {
 }
 
 /* Position of the list elements */
+
 .modal-hamburguer {
   position: absolute;
   list-style: none;
   text-align: center;
   width: 100%;
   top: 40%;
-}
-
-.modal-hamburguer {
   background-image: url(/assets/floatmenu/dots.png);
   background-repeat: no-repeat;
   background-position: 15% 100%;
   background-size: 18%;
-
   list-style: none;
   top: 20%;
   margin: 0;
   padding: 0;
   padding-bottom: 100px;
 }
-
 
 .modal-hamburguer li {
   text-decoration: none;
@@ -1137,7 +1132,7 @@ body {
 .modal-hamburguer li a {
   text-decoration: none;
   margin: 0;
-  color:rgb(7, 7, 7)
+  color: rgb(7, 7, 7);
 }
 
 .modal-hamburguer li:hover {
@@ -1145,5 +1140,5 @@ body {
 }
 
 .modal-hamburguer a:hover {
-  color:#3d8add
+  color: #3d8add;
 }
