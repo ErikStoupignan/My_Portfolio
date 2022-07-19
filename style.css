@@ -24,7 +24,7 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 60px;
     line-height: 60px;
-    padding: 0 auto;
+    padding: 0;
   }
 
   /* Include the main text top */
@@ -101,7 +101,6 @@ body {
 
   /* Don't let see the list items */
   .respmenu nav {
-    border: 5px solid blue;
     width: 100%;
     display: none;
   }
@@ -315,6 +314,7 @@ body {
     background-image: url(/assets/GATO.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    text-shadow: 2px 2px 3px black;
   }
 
   .fram-color {
@@ -322,6 +322,7 @@ body {
     background-image: url(/assets/CUADRADO.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    text-shadow: 2px 2px 3px black;
   }
 
   .skill-color {
@@ -329,6 +330,7 @@ body {
     background-image: url(/assets/FOTO.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    text-shadow: 2px 2px 3px black;
   }
 
   /* Contact Form  ARREGLAR ETIQUETAS */
@@ -496,8 +498,7 @@ body {
     background-color: rgba(238, 238, 94, 0.473);
   }
 
-  .respmenu i,
-  .respmenu input {
+  .respmenu i {
     display: none;
   }
 
@@ -505,6 +506,7 @@ body {
     width: auto;
     height: 100px;
     background-color: #dddfe600;
+
   }
 
   .respmenu > nav {
@@ -513,7 +515,8 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(128, 128, 128, 0.363);
+    background-color: rgba(128, 128, 128, 0.951);
+    z-index: 999;
   }
 
   .respmenu > nav > ul {
@@ -569,10 +572,10 @@ body {
   }
 
   .main-text {
-    font-size: 1vw;
+    font-size: 100%;
     line-height: auto;
     letter-spacing: 3px;
-    max-width: 75%;
+    max-width: %;
   }
 
   .start-collaboration {
@@ -653,7 +656,7 @@ body {
   .about h2 {
     font-family: "Playfair Display", serif;
     font-weight: 400px;
-    font-size: 110px;
+    font-size: 5rem;
     line-height: 100%;
     padding: 0;
     margin: 0;
@@ -807,23 +810,20 @@ body {
   .about-section .about {
     width: 30%;
     height: 500px;
-    margin-right: auto;
+    margin-right: 0;
     display: flex;
     flex-direction: column;
-    position: static;
     justify-content: left;
   }
 
   .about-section .skills {
-    width: 600px;
-    position: static;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    justify-content: center;
+    justify-content: left;
     gap: 0;
-    margin-left: auto;
-    margin-right: 70px;
+    margin: 0;
   }
 
   /* Skills area */
@@ -855,20 +855,23 @@ body {
     background-image: url(/assets/GATO.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    text-shadow: 2px 2px 3px black;
   }
 
   .fram-color {
-    background-color: #83353b;
+    background-color: #e2505c;
     background-image: url(/assets/CUADRADO.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    text-shadow: 2px 2px 3px black;
   }
 
   .skill-color {
-    background-color: #6a542e;
+    background-color: #febf52;
     background-image: url(/assets/FOTO.png);
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    text-shadow: 2px 2px 3px black;
   }
 
   .dots-imagen {
