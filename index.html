@@ -58,7 +58,7 @@
         
                     <!-- Collaboration button -->
                     <div class="start-collaboration">
-                            <a href="#contact">Start collaboration</a>
+                            <a href="#contact" onclick="toogglePopup()">Start collaboration</a>
                     </div>
 
                 </section>
@@ -101,7 +101,7 @@
                         <!-- See this project button -->
                         <div class="box align-button box6">
                             <a href="#">
-                                <div class="buttom-arrow">
+                                <div class="buttom-arrow" onclick="popUp('project1')">
                                     <p>See this project
                                     <img class="arrow" src="/assets/211621_c_right_arrow_icon.png" alt="">
                                     </p>
@@ -127,7 +127,7 @@
                         <!-- See this project button -->
                         <div class="box align-button box6">
                             <a href="#">
-                                <div class="buttom-arrow">
+                                <div class="buttom-arrow" onclick="popUp('project2')">
                                     <p>See this project
                                     <img class="arrow" src="/assets/211621_c_right_arrow_icon.png" alt="">
                                     </p>
@@ -153,7 +153,7 @@
                         <!-- See this project button -->
                         <div class="box align-button box6">
                             <a href="#">
-                                <div class="buttom-arrow">
+                                <div class="buttom-arrow" onclick="popUp('project3')">
                                     <p>See this project
                                     <img class="arrow" src="/assets/211621_c_right_arrow_icon.png" alt="">
                                     </p>
@@ -179,7 +179,7 @@
                         <!-- See this project button -->
                         <div class="box align-button box6">
                             <a href="#">
-                                <div class="buttom-arrow">
+                                <div class="buttom-arrow" onclick="popUp('project4')">
                                     <p>See this project
                                     <img class="arrow" src="/assets/211621_c_right_arrow_icon.png" alt="">
                                     </p>
@@ -207,7 +207,7 @@
                         <!-- See this project button -->
                         <div class="box align-button box6">
                             <a href="#">
-                                <div class="buttom-arrow">
+                                <div class="buttom-arrow" onclick="popUp('project5')">
                                     <p>See this project
                                     <img class="arrow" src="/assets/211621_c_right_arrow_icon.png" alt="">
                                     </p>
@@ -233,7 +233,7 @@
                         <!-- See this project button -->
                         <div class="box box6">
                             <a href="#">
-                                <div class="buttom-arrow">
+                                <div class="buttom-arrow" onclick="popUp('project6')">
                                     <p>See this project
                                     <img class="arrow" src="/assets/211621_c_right_arrow_icon.png" alt="">
                                     </p>
@@ -383,6 +383,9 @@
         </footer>
 
 
+
+
+        <!-- Modal zone ------------------------------------------------->
         <!-- Modal for hambuguer menu -->
         <div id="modal-menu">
             <i id="x-icon" class="fas fa-times dont-show"></i>
@@ -402,8 +405,52 @@
             <img class="mf-bottom" src="/assets/floatmenu/background-bottom.png" alt="">
         </div>
 
+
+
+
+
+        <!-- Popup windows  -->      
+        <section class="popup" id="popup-1">
+            <div class="background-blur"></div>
+            <div class="container-pop">
+                <div class="close-btn" onclick= "popDown()" >&times;</div>
+
+                <!-- title and sources -->
+                <h2 id="Popup-title">Si funciona! </h2>
+
+                <ul class="tech-pop-ul">
+                    <li id="pop-tech-1">Html</li>
+                    <li id="pop-tech-2">Ruby on Rails</li>
+                    <li id="pop-tech-3">JavaScript</li>
+                </ul>
+
+                <!-- Carrusel photos     -->
+                <div class="carrusel">
+                    <img id="popup-img1" class="pic1 zoom" src="/assets/hd1.png" alt="">
+                    <img id="popup-img2" class="pic2 zoom" src="/assets/Rectangle21(1).png" alt="">
+                    <img id="popup-img3" class="pic3 zoom" src="/assets/Rectangle21(2).png" alt="">
+                    <img id="popup-img4" class="pic4 zoom" src="/assets/Rectangle21(3).png" alt="">
+                    <img id="popup-img5" class="pic5 zoom" src="/assets/Rectangle21(4).png" alt="">
+                </div>
+
+                <p id="Popup-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Eum aliquam nihil vitae voluptatibus soluta atque, 
+                    nam magnam qui quia nisi enim quo. Exercitationem, 
+                    debitis minus.
+                </p>
+
+                <!-- Pop button on the bottom -->
+                <section class="container-pop-button">
+                    <a id='pop-link-1' class="pop-button" href="">  See live   </a>
+                    <a id='pop-link-2' class="pop-button" href=""> See source  </a>
+                </section>
+                
+            </div>
+        </section>
+
+
         <!-- JavaScript file -->
-        <script type="module" src="myScript.js"></script>
+        <script src="myScript.js"></script>
 
 
     </body>
