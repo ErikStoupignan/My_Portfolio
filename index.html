@@ -85,7 +85,7 @@
 
                     <!-- Section  #1-->
                     <div class="container section1">
-                        <img class="box1 display-none-after" src="/assets/desktop/hd1.png" alt="Introductory cover of the project">
+                        <img onclick="popUp('project1')" class="box1 display-none-after" src="/assets/desktop/hd1.png" alt="Introductory cover of the project">
                         <img class="box1 display-none" src="/assets/hd1.png" alt="Introductory cover of the project">
                         <div class="box box2">
                             <h2 class="subtitle">First project</h2>
@@ -112,7 +112,7 @@
 
                     <!-- Section  #2-->
                     <div class="container section2">
-                        <img class="box1" src="/assets/Rectangle21-2.png" alt="Introductory cover of the project">
+                        <img onclick="popUp('project2')" class="box1" src="/assets/Rectangle21-2.png" alt="Introductory cover of the project">
                         <div class="box box2">
                             <h2 class="subtitle">Second project</h2>
                         </div>
@@ -138,7 +138,7 @@
 
                     <!-- Section  #3-->
                     <div class="container section3">
-                        <img class="box1" src="/assets/Rectangle21(1).png" alt="Introductory cover of the project">
+                        <img onclick="popUp('project3')" class="box1" src="/assets/Rectangle21(1).png" alt="Introductory cover of the project">
                         <div class="box box2">
                             <h2 class="subtitle">Super project</h2>
                         </div>
@@ -164,7 +164,7 @@
 
                     <!-- Section  #4-->
                     <div class="container section4">
-                        <img class="box1" src="/assets/Rectangle21(2).png" alt="Introductory cover of the project">
+                        <img onclick="popUp('project4')" class="box1" src="/assets/Rectangle21(2).png" alt="Introductory cover of the project">
                         <div class="box box2">
                             <h2 class="subtitle">Arduino developer</h2>
                         </div>
@@ -190,9 +190,7 @@
 
                     <!-- Section  #5-->
                     <div class="container section5">
-                        <img class="box1" src="/assets/Rectangle21(3).png" alt="Introductory cover of the project">
-
-
+                        <img onclick="popUp('project5')" class="box1" src="/assets/Rectangle21(3).png" alt="Introductory cover of the project">
                         <div class="box box2">
                             <h2 class="subtitle">Pressure Sensor</h2>
                         </div>
@@ -218,7 +216,7 @@
 
                     <!-- Section  #6-->
                     <div class="container section6">
-                        <img class="box1" src="/assets/Rectangle21(4).png" alt="Introductory cover of the project">
+                        <img onclick="popUp('project6')" class="box1" src="/assets/Rectangle21(4).png" alt="Introductory cover of the project">
                         <div class="box box2">
                             <h2 class="subtitle">Microverse Programm!</h2>
                         </div>
@@ -441,8 +439,23 @@
 
                 <!-- Pop button on the bottom -->
                 <section class="container-pop-button">
-                    <a id='pop-link-1' class="pop-button" href="">  See live   </a>
-                    <a id='pop-link-2' class="pop-button" hre> See source  </a>
+                    <div class="pop-button"><a id='pop-link-1' href="">  See live <i class="fas fa-external-link-alt"></i>  </a></div>
+                    <div class="pop-button"><a id='pop-link-2' href=""> See source <i class="fab fa-github"></i>  </a></div>
+                </section>
+
+                <!-- Previous and next button -->
+                <section class="previous-next-container">
+                    
+                    <span class="p-n-button">
+                        <i class="fas fa-arrow-left"></i>
+                        Previous project
+                    </span>
+                
+                    <span class="p-n-button">
+                        Next project
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
+                    
                 </section>
                 
                 

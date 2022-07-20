@@ -19,7 +19,7 @@ list.addEventListener('click', () => {
 // function to open and close the popup windows
 // project# =  ['Titulo'        , 'Description'          , 'img1', 'img', 'img', 'img', 'img','tech1','tech2','tech3','link live version','link to source']
 let project1 = ['First project',
-                 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, rem!',
+                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
                  '/assets/hd1.png',
                  '/assets/Rectangle21(1).png',
                  '/assets/Rectangle21(2).png',
@@ -133,6 +133,7 @@ function popUp(string) {
 
   if ( box != undefined ){
     document.getElementById("popup-1").classList.toggle("active");
+    document.getElementById("menu").style.display = 'none';
     document.getElementById("Popup-title").innerHTML = box[0];
     document.getElementById("Popup-text").innerHTML = box[1];
     document.getElementById("popup-img1").src = box[2];
@@ -154,5 +155,6 @@ function popUp(string) {
 // function to exit 
 function popDown() {
   document.getElementById("popup-1").classList.toggle("active");
+  document.getElementById("menu").style.display = 'block';
   };
 

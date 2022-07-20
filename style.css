@@ -513,12 +513,13 @@ body {
     margin-top: 2%;
 
     width: 90%;
-    height: 90%;
+    height: 100%;
     z-index: 3;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
     display:none;
+    overflow-y: scroll;
   }
 
   .container-pop h2 {
@@ -564,12 +565,9 @@ body {
   }
 
   .popup.active .container-pop {
-    display: block;
-  }
-
-  .popup.active .container-pop {
     transition: all 800ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
+    display: block;
   }
 
     /* Carrusel photos */
@@ -622,38 +620,63 @@ body {
   }
   /* End the carrsel area */
   .container-pop p {
-    display: block;
-    justify-content: left;
-    font-size: 12px;
+    text-align: left;
+    font-size: 24px;
   }
 
-  /* Pop contariner buttons on the bottom */
-  .container-pop-button{
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: space-between;
-    justify-self: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-  }
+/* Pop contariner buttons on the bottom */
+.container-pop-button{
+  flex-direction: column;
+  justify-content: space-between;
+  
+  justify-self: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+}
 
-  .pop-button {
-    cursor: pointer;
+.pop-button {
+  cursor: pointer;
+  width: 90%;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  position: relative;
+}
 
-    width: 80%;
-    height: 9vw;
-    margin-bottom: 10px;
+.pop-button > a {
+  display: inline-flex;
+  align-content: center;
+  justify-content: space-around;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(16, 8, 61);
+  padding-left: 10px ;
+  padding-top: 2px;
+  font-size: 1.2rem;
+}
 
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.153);
-    font-size: 14px;
-    font-weight: bold;
+.pop-button > a > i {
+  margin: 0px 0px 0px 0px;
+  padding: 0;
+  font-size: 1.2rem;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.pop-button > a:hover {
+  color: rgb(18, 221, 248);
+}
+
+
+
+  /* Don't show the arrows in the mobil version */
+  .previous-next-container {
+    display: none;
   }
 /* Clases for PopUp Windows ------------------------------------------------- */
 }
@@ -744,7 +767,7 @@ body {
     font-size: 100%;
     line-height: auto;
     letter-spacing: 3px;
-    max-width: %;
+    max-width: 90%;
   }
 
   .start-collaboration {
@@ -1224,8 +1247,8 @@ body {
 
   .respmenu > nav > ul > li > a {
     text-decoration: none;
-    color: #1a2236;
-    font-size: 1.5vw;
+    color: #000000;
+    font-size: 2vw;
   }
 
   #modal-menu {
@@ -1234,67 +1257,15 @@ body {
 
 
 
-  /* Clases for PopUp Windows ------------------------------------------------- */
- 
-.background-blur {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0,0,0,0.7);
-  z-index: 1;
-  display:none;
+  
 
-  margin: 0;
-  padding: 0;
-}
 
- .container-pop {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%) scale(0);
 
-  z-index: 2;
-  background: #ffff;
-  width: 450px;
-  height: 220px;
-  z-index: 3;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
-  display:none;
-}
 
- .close-btn {
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 30px;
-  height: 30px;
-  background: #222;
-  color: rgb(207, 21, 21);
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 50%;
-}
 
-.popup.active .background-blur {
-  display: block;
-}
 
-.popup.active .container-pop {
-  display: block;
-}
 
-.popup.active .container-pop {
-  transition: all 800ms ease-in-out;
-  transform: translate(-50%, -50%) scale(1);
-}
+
 
 
   /* Clases for PopUp Windows ------------------------------------------------- */
@@ -1304,7 +1275,7 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(153, 40, 40, 0.541);
+    background-color: rgba(12, 6, 41, 0.685);
     backdrop-filter: blur(100px);
     z-index: 1;
     display:none;
@@ -1315,41 +1286,45 @@ body {
 
   .container-pop {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) scale(0);
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    
+    transform: scale(0);
 
     z-index: 2;
     background: rgb(255, 255, 255);
-    margin-top: 2%;
 
     width: 90%;
-    height: 90%;
+    height: 100%;
     z-index: 3;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
     display:none;
+
+    overflow: scroll;
   }
 
   .container-pop h2 {
     text-align: left;
-    font-size: 1.5em;
+    font-size: 3rem;
     padding: 0;
-    margin: 20px 0 20px 0;
+    margin: 0px 0 10px 0;
   }
 
   .tech-pop-ul {
     margin: 0 0 20px 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
   }
 
   .tech-pop-ul li {
     list-style: none;
     border: 1px solid #000;
     padding: 2px 5px 2px 5px;
+    margin: 0px 10px 0px 0px;
     cursor: pointer;
   }
 
@@ -1362,7 +1337,7 @@ body {
     width: 40px;
     height: 40px;
     background: rgba(255, 255, 255, 0);
-    color: rgb(0, 0, 0);
+    color: rgba(77, 76, 76, 0.548);
     font-size: 70px;
     font-weight: 200;
     line-height: 30px;
@@ -1379,8 +1354,8 @@ body {
   }
 
   .popup.active .container-pop {
-    transition: all 800ms ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
+    transition: all 800ms;
+    transform: scale(1);
   }
 
     /* Carrusel photos */
@@ -1390,9 +1365,11 @@ body {
     overflow-x: hidden;
 
     width: 100%;
-    min-width: 230px;
-    max-width: 450px;
-    height: 40%;
+    min-width: 450px;
+    max-width: 1600px;
+
+    min-height: 40%;
+    max-height: 120%;
 
     display: grid;
     grid-template-areas: 
@@ -1429,44 +1406,79 @@ body {
 
   /* Apply zoom to the principal picture */
   .zoom:hover {
-    transform: scale(1.2);
+    transform: scale(0.9);
   }
 
   /* End the carrsel area */
   .container-pop p {
     display: block;
     justify-content: left;
-    font-size: 12px;
+    font-size: 1.5rem;
   }
 
   /* Pop contariner buttons on the bottom */
   .container-pop-button{
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: space-between;
-    justify-self: center;
-    align-items: center;
-    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    width: 90%;
     height: auto;
   }
 
   .pop-button {
     cursor: pointer;
 
-    width: 80%;
-    height: 9vw;
-    margin-bottom: 10px;
+    width: 30%;
+    height: 40px;
+    margin: 0px 20px 0px 0px;
 
     background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.153);
+    border: 1px solid rgba(0, 0, 0, 0.37);
     font-size: 14px;
     font-weight: bold;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    
   }
+
+  .pop-button:hover {
+    background-color: rgb(10, 5, 54);
+    color: white;
+  }
+
+  .pop-button > a {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(16, 8, 61);
+    padding-left: 10px ;
+    padding-top: 5%;
+  }
+
+  .pop-button > a > i {
+    margin: 0px 5px 0px 0px;
+    font-size: 1.2rem;
+  }
+
+  .pop-button > a:hover {
+    color: white;
+  }
+
+  /* Class to control the arrows on the bottom */
+  .previous-next-container {
+    padding: 0;
+    margin: 10% 0 10% 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    justify-self: center;
+  }
+
+  .p-n-button {
+    cursor: pointer;
+  }
+
 /* Clases for PopUp Windows ------------------------------------------------- */
 }
 
