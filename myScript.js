@@ -69,7 +69,7 @@ const master = [
 
 // Function to found the index inside the master array
 function found(input) {
-  for (let i = 0; i < master.length; i++) {
+  for (let i = 0; i < master.length; i += 1) {
     if (master[i].id === input) {
       return i;
     }
