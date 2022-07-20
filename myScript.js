@@ -136,20 +136,23 @@ function popUp(string) {
   }
 
   if (box !== undefined) {
+    const [title, paragraph, img1, img2, img3, img4, img5,
+      technologi1, technologi2, technologi3, link1, link2] = box;
+
     document.getElementById('popup-1').classList.toggle('active');
     document.getElementById('menu').style.display = 'none';
-    document.getElementById('Popup-title').innerHTML = box[0];
-    document.getElementById('Popup-text').innerHTML = box[1];
-    document.getElementById('popup-img1').src = box[2];
-    document.getElementById('popup-img2').src = box[3];
-    document.getElementById('popup-img3').src = box[4];
-    document.getElementById('popup-img4').src = box[5];
-    document.getElementById('popup-img5').src = box[6];
-    document.getElementById('pop-tech-1').innerHTML = box[7];
-    document.getElementById('pop-tech-2').innerHTML = box[8];
-    document.getElementById('pop-tech-3').innerHTML = box[9];
-    document.getElementById('pop-link-1').href = box[10];
-    document.getElementById('pop-link-2').href = box[11];
+    document.getElementById('Popup-title').innerHTML = title;
+    document.getElementById('Popup-text').innerHTML = paragraph;
+    document.getElementById('popup-img1').src = img1;
+    document.getElementById('popup-img2').src = img2;
+    document.getElementById('popup-img3').src = img3;
+    document.getElementById('popup-img4').src = img4;
+    document.getElementById('popup-img5').src = img5;
+    document.getElementById('pop-tech-1').innerHTML = technologi1;
+    document.getElementById('pop-tech-2').innerHTML = technologi2;
+    document.getElementById('pop-tech-3').innerHTML = technologi3;
+    document.getElementById('pop-link-1').href = link1;
+    document.getElementById('pop-link-2').href = link2;
   }
 }
 
