@@ -16,10 +16,6 @@ list.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
-//  function to open and close the popup windows
-//  ['Titulo', 'Description', 'img1', '2', '3', '4', '5','tech1','2','3','live version','Source']
-
-
 const master = [
   {   id: 'project1', title: 'First project', 
   paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
@@ -59,7 +55,6 @@ const master = [
   },
 ] 
 
-
 // Function to found the index inside the master array
 function found(input) {
   for (let i = 0 ; i < master.length ; i++){
@@ -68,26 +63,54 @@ function found(input) {
     }
   }
 }
-  
+
 // function to put the information inside the Popup
 // eslint-disable-next-line
 function popUp(string) {
-const index = found(string);
 
   document.getElementById('popup-1').classList.toggle('active');
-  document.getElementById('menu').style.display = 'none';
-  document.getElementById('Popup-title').innerHTML = master[index].title;
-  document.getElementById('Popup-text').innerHTML = master[index].paragraph;
-  document.getElementById('popup-img1').src = master[index].imgs[0];
-  document.getElementById('popup-img2').src = master[index].imgs[1];
-  document.getElementById('popup-img3').src = master[index].imgs[2];
-  document.getElementById('popup-img4').src = master[index].imgs[3];
-  document.getElementById('popup-img5').src = master[index].imgs[4];
-  document.getElementById('pop-tech-1').innerHTML = master[index].techLlist[0];
-  document.getElementById('pop-tech-2').innerHTML = master[index].techLlist[1];
-  document.getElementById('pop-tech-3').innerHTML = master[index].techLlist[2];
-  document.getElementById('pop-link-1').href = master[index].links[0];
-  document.getElementById('pop-link-2').href = master[index].links[1];
+
+  const index = found(string);
+  let x = [master[index]];
+
+  document.getElementById('popup-1').innerHTML = x.map ( items => 
+  `  <div class="background-blur"></div>
+      <div class="container-pop">
+          <div class="close-btn" onclick= "popDown()" >&times;</div>
+
+          <h2 id="Popup-title">${items.title}</h2>
+          <ul class="tech-pop-ul">
+              <li id="pop-tech-1">${items.techLlist[0]}</li>
+              <li id="pop-tech-2">${items.techLlist[1]}</li>
+              <li id="pop-tech-3">${items.techLlist[2]}</li>
+          </ul>
+  
+          <div class="carrusel">
+              <img id="popup-img1" class="pic1 zoom" src="${items.imgs[0]}" alt="">
+              <img id="popup-img2" class="pic2 zoom" src="${items.imgs[1]}" alt="">
+              <img id="popup-img3" class="pic3 zoom" src="${items.imgs[2]}" alt="">
+              <img id="popup-img4" class="pic4 zoom" src="${items.imgs[3]}" alt="">
+              <img id="popup-img5" class="pic5 zoom" src="${items.imgs[4]}" alt="">
+          </div>
+          <p id="Popup-text">${items.paragraph}</p>
+
+          <section class="container-pop-button">
+              <div class="pop-button"><a id='pop-link-1' href="${items.links[0]}"> <span>See live</span><i class="fas fa-external-link-alt"></i>  </a></div>
+              <div class="pop-button"><a id='pop-link-2' href="${items.links[1]}"> <span>See source</span><i class="fab fa-github"></i>  </a></div>
+          </section>
+
+          <section class="previous-next-container">
+              <span class="p-n-button">
+                  <i class="fas fa-arrow-left"></i>
+                  <span>Previous project </span>
+              </span>
+              <span class="p-n-button">
+                  <span>Next project</span>
+                  <i class="fas fa-arrow-right"></i>
+              </span>
+          </section>
+      </div>`
+  )
 }
 
 // function to exit
