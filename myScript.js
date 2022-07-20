@@ -25,18 +25,25 @@ let project1 = ['First project',
                  '/assets/desktop/desk-img-2.png',
                  '/assets/desktop/desk-img-3.png',
                  '/assets/desktop/desk-img-4.png',
+                 'HTML',
+                 'Ruby on Rails',
+                 'JavaScript',
+                 'https://github.com/ErikStoupignan/My_Portfolio',
+                 'https://github.com/ErikStoupignan/My_Portfolio'];
+
+let project2 = ['Second project',
+                 'Welcome to my project',
+                 '/assets/desktop/desk-img-4.png',
+                 '/assets/hd1.png',
+                 '/assets/desktop/desk-img-1.png',
+                 '/assets/desktop/desk-img-2.png',
+                 '/assets/desktop/desk-img-3.png',
                  'html',
                  'Ruby on Rails',
                  'JavaScript',
                  'https://github.com/ErikStoupignan/My_Portfolio',
                  'https://github.com/ErikStoupignan/My_Portfolio'];
 
-                 
-// let project2 = 
-// let project3 =
-// let project4 =
-// let project5 =
-// let project6 =
 
 // function to put the information inside the Popup 
 function popUp(string) {
