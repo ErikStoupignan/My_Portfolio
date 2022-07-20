@@ -261,6 +261,7 @@ body {
     background-color: rgba(38, 180, 185, 0.575);
   }
 
+  /* stylelint-disable */
   .buttom-arrow p {
     border: 1px solid rgb(238, 238, 238);
     margin-top: 10px;
@@ -268,6 +269,7 @@ body {
     padding-left: 10px;
     display: flex;
   }
+  /* stylelint-enable */
 
   .arrow {
     position: flex;
@@ -359,11 +361,13 @@ body {
     margin: 0;
   }
 
+  /* stylelint-disable */
   .get-my-resume > p {
     margin: 10px;
     font-size: 18px;
     padding: 0;
   }
+  /* stylelint-enable */
 
   .submit-form > .contact-inputs > p {
     display: flex;
@@ -551,15 +555,14 @@ body {
     justify-content: space-around;
   }
 
-  /* stylelint-disable */ 
-  
-  /* stylelint-enable */ 
+  /* stylelint-disable */
   .tech-pop-ul li {
     list-style: none;
     border: 1px solid #000;
     padding: 2px 5px 2px 5px;
     cursor: pointer;
   }
+  /* stylelint-enable */
 
   .close-btn {
     cursor: pointer;
@@ -643,8 +646,7 @@ body {
     text-align: left;
     font-size: 24px;
   }
-  /* stylelint-enable */
-
+ 
   /* Pop contariner buttons on the bottom */
   .container-pop-button {
     flex-direction: column;
@@ -657,6 +659,7 @@ body {
     margin: 0 0 0 0;
     padding: 0;
   }
+   /* stylelint-enable */
 
   .pop-button {
     cursor: pointer;
@@ -1305,7 +1308,6 @@ body {
     padding: 0;
     margin: 0 0 10px 0;
   }
-  /* stylelint-enable */
 
   .tech-pop-ul {
     margin: 0 0 20px 0;
@@ -1314,7 +1316,6 @@ body {
     justify-content: start;
   }
 
-  /* stylelint-disable */
   .tech-pop-ul li {
     list-style: none;
     border: 1px solid #000;
@@ -1445,18 +1446,19 @@ body {
     font-size: 2vw;
     width: 100%;
   }
+  
 
   .pop-button > a > i {
     font-size: 2vw;
     right: 0;
     margin: auto 10% auto 0;
   }
+  /* stylelint-enable */
 
   .pop-button > a > span {
     margin-left: 15%;
   }
 
-  /* stylelint-enable */
   .pop-button > a:hover {
     color: white;
   }
