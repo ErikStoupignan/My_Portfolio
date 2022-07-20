@@ -255,8 +255,8 @@ body {
     margin-bottom: 20px;
     padding-left: 15px;
     display: inline-flex;
-  }  
-  
+  }
+
   .buttom-arrow p:hover {
     background-color: rgba(38, 180, 185, 0.575);
   }
@@ -551,6 +551,9 @@ body {
     justify-content: space-around;
   }
 
+  /* stylelint-disable */ 
+  
+  /* stylelint-enable */ 
   .tech-pop-ul li {
     list-style: none;
     border: 1px solid #000;
@@ -1422,7 +1425,6 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.37);
     font-size: 14px;
     font-weight: bold;
-    
     display: flex;
     justify-content: center;
     align-items: center;
