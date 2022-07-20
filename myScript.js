@@ -17,51 +17,64 @@ list.addEventListener('click', () => {
 });
 
 const master = [
-  {   id: 'project1', title: 'First project', 
-  paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  imgs: ['/assets/hd1.png', '/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png'],
-  techLlist: [ 'HTML', 'Ruby on Rails', 'JavaScript',],
-  links: [ 'https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
+  {
+    id: 'project1',
+    title: 'First project',
+    paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    imgs: ['/assets/hd1.png', '/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png'],
+    techLlist: ['HTML', 'Ruby on Rails', 'JavaScript'],
+    links: ['https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
   },
-  {  id: 'project2', title: 'Second project', 
-  paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
-  techLlist: [ 'HTML', 'Ruby on Rails', 'JavaScript',],
-  links: [ 'https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
+  {
+    id: 'project2',
+    title: 'Second project',
+    paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
+    techLlist: ['HTML', 'Ruby on Rails', 'JavaScript'],
+    links: ['https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
   },
-  {  id: 'project3', title: 'Super project', 
-  paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
-  techLlist: [ 'HTML', 'Ruby on Rails', 'JavaScript',],
-  links: [ 'https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
+  {
+    id: 'project3',
+    title: 'Super project',
+    paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
+    techLlist: ['HTML', 'Ruby on Rails', 'JavaScript'],
+    links: ['https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
   },
-  {  id: 'project4', title: 'Arduino developer', 
-  paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
-  techLlist: [ 'HTML', 'Ruby on Rails', 'JavaScript',],
-  links: [ 'https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
+  {
+    id: 'project4',
+    title: 'Arduino developer',
+    paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
+    techLlist: ['HTML', 'Ruby on Rails', 'JavaScript'],
+    links: ['https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
   },
-  {  id: 'project5', title: 'Pressure Sensor', 
-  paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
-  techLlist: [ 'HTML', 'Ruby on Rails', 'JavaScript',],
-  links: [ 'https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
+  {
+    id: 'project5',
+    title: 'Pressure Sensor',
+    paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
+    techLlist: ['HTML', 'Ruby on Rails', 'JavaScript'],
+    links: ['https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
   },
-  {  id: 'project6', title: 'Microverse Programm!', 
-  paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-  imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
-  techLlist: [ 'HTML', 'Ruby on Rails', 'JavaScript',],
-  links: [ 'https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
+  {
+    id: 'project6',
+    title: 'Microverse Programm!',
+    paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
+    imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
+    techLlist: ['HTML', 'Ruby on Rails', 'JavaScript'],
+    links: ['https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
   },
-] 
+];
 
 // Function to found the index inside the master array
 function found(input) {
-  for (let i = 0 ; i < master.length ; i++){
+  for (let i = 0; i < master.length; i++) {
     if (master[i].id === input) {
-    return i; 
+      return i;
     }
   }
+  return null;
 }
 
 // function to put the information inside the Popup
@@ -71,10 +84,9 @@ function popUp(string) {
   document.getElementById('popup-1').classList.toggle('active');
 
   const index = found(string);
-  let x = [master[index]];
+  const x = [master[index]];
 
-  document.getElementById('popup-1').innerHTML = x.map ( items => 
-  `  <div class="background-blur"></div>
+  document.getElementById('popup-1').innerHTML = x.map((items) => `  <div class="background-blur"></div>
       <div class="container-pop">
           <div class="close-btn" onclick= "popDown()" >&times;</div>
 
@@ -109,8 +121,7 @@ function popUp(string) {
                   <i class="fas fa-arrow-right"></i>
               </span>
           </section>
-      </div>`
-  )
+      </div>`);
 }
 
 // function to exit
@@ -119,4 +130,3 @@ function popDown() {
   document.getElementById('popup-1').classList.toggle('active');
   document.getElementById('menu').style.display = 'block';
 }
-
