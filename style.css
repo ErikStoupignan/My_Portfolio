@@ -175,7 +175,7 @@ body {
       "uno uno uno"
       "button button button";
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto 15% 10% auto;
+    grid-template-rows: auto auto auto auto;
   }
 
   /* General style for letters */
@@ -238,6 +238,10 @@ body {
     padding: 3px 10px 3px 10px;
   }
 
+  .ul-technologys li:hover {
+    background-color: #3d8add;
+  }
+
   /* Style of button "See this project" */
   .box6 a {
     text-decoration: none;
@@ -251,6 +255,10 @@ body {
     margin-bottom: 20px;
     padding-left: 15px;
     display: inline-flex;
+  }  
+  
+  .buttom-arrow p:hover {
+    background-color: rgba(38, 180, 185, 0.575);
   }
 
   .buttom-arrow p {
@@ -463,6 +471,15 @@ body {
     text-decoration: none;
   }
 
+  .pop-button > a > i {
+    margin: 0 0 0 0;
+    padding: 0;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
   .icons > li > a > i {
     font-size: 26px;
   }
@@ -496,8 +513,7 @@ body {
     background-color: rgba(40, 93, 153, 0.541);
     backdrop-filter: blur(100px);
     z-index: 1;
-    display:none;
-
+    display: none;
     margin: 0;
     padding: 0;
   }
@@ -506,28 +522,27 @@ body {
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) scale(0);
-
+    transform: translate(-50%, -50%) scale(0);
     z-index: 2;
     background: rgb(255, 255, 255);
     margin-top: 2%;
-
     width: 90%;
     height: 100%;
-    z-index: 3;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    display:none;
+    display: none;
     overflow-y: scroll;
   }
 
+  /* stylelint-disable */
   .container-pop h2 {
     text-align: left;
     font-size: 1.5em;
     padding: 0;
     margin: 20px 0 20px 0;
   }
+  /* stylelint-enable */
 
   .tech-pop-ul {
     margin: 0 0 20px 0;
@@ -546,7 +561,6 @@ body {
   .close-btn {
     cursor: pointer;
     position: absolute;
-
     right: 20px;
     top: 20px;
     width: 40px;
@@ -570,24 +584,21 @@ body {
     display: block;
   }
 
-    /* Carrusel photos */
+  /* Carrusel photos */
   .carrusel {
     cursor: pointer;
     overflow-y: hidden;
     overflow-x: hidden;
-
     width: 100%;
     min-width: 230px;
     max-width: 450px;
     height: 40%;
-
     display: grid;
-    grid-template-areas: 
-    'pic1 pic1 pic1 pic1'
-    'pic2 pic3 pic4 pic5';
+    grid-template-areas:
+      'pic1 pic1 pic1 pic1'
+      'pic2 pic3 pic4 pic5';
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 75% auto;
-
     margin: 0 auto;
   }
 
@@ -595,20 +606,24 @@ body {
     grid-area: pic1;
     width: 100%;
     height: 100%;
-    transition: transform .2s; 
+    transition: transform 1s;
   }
+
   .pic2 {
     grid-area: pic2;
     width: 100%;
   }
+
   .pic3 {
     grid-area: pic3;
     width: 100%;
   }
+
   .pic4 {
     grid-area: pic4;
     width: 100%;
   }
+
   .pic5 {
     grid-area: pic5;
     width: 100%;
@@ -618,67 +633,61 @@ body {
   .zoom:hover {
     transform: scale(1.2);
   }
+
+  /* stylelint-disable */
   /* End the carrsel area */
   .container-pop p {
     text-align: left;
     font-size: 24px;
   }
+  /* stylelint-enable */
 
-/* Pop contariner buttons on the bottom */
-.container-pop-button{
-  flex-direction: column;
-  justify-content: space-between;
-  
-  justify-self: center;
-  align-items: center;
-  display: flex;
-  width: 100%;
-  height: 15vh;
-  margin: 0px 0px 0px 0px;
-  padding: 0;
-}
+  /* Pop contariner buttons on the bottom */
+  .container-pop-button {
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    margin: 0 0 0 0;
+    padding: 0;
+  }
 
-.pop-button {
-  cursor: pointer;
-  width: 90%;
-  height: 40px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.37);
-  position: relative;
-}
+  .pop-button {
+    cursor: pointer;
+    width: 90%;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.37);
+    position: relative;
+  }
 
-.pop-button > a {
-  display: inline-flex;
-  align-content: center;
-  justify-content: space-around;
-  cursor: pointer;
-  text-decoration: none;
-  color: rgb(16, 8, 61);
-  padding-left: 10px ;
-  padding-top: 2px;
-  font-size: 1.2rem;
-}
+  /* stylelint-disable */
+  .pop-button > a {
+    display: inline-flex;
+    align-content: center;
+    justify-content: space-around;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(16, 8, 61);
+    padding-left: 10px;
+    padding-top: 2px;
+    font-size: 1.2rem;
+  }
+  /* stylelint-enable */
 
-.pop-button > a > i {
-  margin: 0px 0px 0px 0px;
-  padding: 0;
-  font-size: 1.2rem;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-
-.pop-button > a:hover {
-  color: rgb(18, 221, 248);
-}
-
-
+  .pop-button > a:hover {
+    color: rgb(18, 221, 248);
+  }
 
   /* Don't show the arrows in the mobil version */
   .previous-next-container {
     display: none;
   }
-/* Clases for PopUp Windows ------------------------------------------------- */
+
+  /* Clases for PopUp Windows ------------------------------------------------- */
 }
 
 /* Desktop version ----------------------------------------------------------------------------------------------------------------------- */
@@ -732,7 +741,6 @@ body {
     background-color: rgba(31, 22, 22, 0.23);
     text-shadow: 5px 5px 5px white;
   }
-
 
   .display-none {
     display: none;
@@ -1247,26 +1255,13 @@ body {
 
   .respmenu > nav > ul > li > a {
     text-decoration: none;
-    color: #000000;
+    color: #050505;
     font-size: 2vw;
   }
 
   #modal-menu {
     display: none !important;
   }
-
-
-
-  
-
-
-
-
-
-
-
-
-
 
   /* Clases for PopUp Windows ------------------------------------------------- */
   .background-blur {
@@ -1278,8 +1273,7 @@ body {
     background-color: rgba(12, 6, 41, 0.685);
     backdrop-filter: blur(100px);
     z-index: 1;
-    display:none;
-
+    display: none;
     margin: 0;
     padding: 0;
   }
@@ -1289,29 +1283,26 @@ body {
     top: 50px;
     left: 50px;
     right: 50px;
-    
     transform: scale(0);
-
     z-index: 2;
     background: rgb(255, 255, 255);
-
     width: 90%;
     height: 100%;
-    z-index: 3;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    display:none;
-
+    display: none;
     overflow: scroll;
   }
 
+  /* stylelint-disable */
   .container-pop h2 {
     text-align: left;
     font-size: 3rem;
     padding: 0;
-    margin: 0px 0 10px 0;
+    margin: 0 0 10px 0;
   }
+  /* stylelint-enable */
 
   .tech-pop-ul {
     margin: 0 0 20px 0;
@@ -1320,18 +1311,19 @@ body {
     justify-content: start;
   }
 
+  /* stylelint-disable */
   .tech-pop-ul li {
     list-style: none;
     border: 1px solid #000;
     padding: 2px 5px 2px 5px;
-    margin: 0px 10px 0px 0px;
+    margin: 0 10px 0 0;
     cursor: pointer;
   }
+  /* stylelint-enable */
 
   .close-btn {
     cursor: pointer;
     position: absolute;
-
     right: 20px;
     top: 20px;
     width: 40px;
@@ -1350,34 +1342,27 @@ body {
   }
 
   .popup.active .container-pop {
+    transition: all 800ms;
+    transform: scale(1);
     display: block;
   }
 
-  .popup.active .container-pop {
-    transition: all 800ms;
-    transform: scale(1);
-  }
-
-    /* Carrusel photos */
+  /* Carrusel photos */
   .carrusel {
     cursor: pointer;
     overflow-y: hidden;
     overflow-x: hidden;
-
     width: 100%;
     min-width: 450px;
     max-width: 1600px;
-
     min-height: 40%;
     max-height: 120%;
-
     display: grid;
-    grid-template-areas: 
-    'pic1 pic1 pic1 pic1'
-    'pic2 pic3 pic4 pic5';
+    grid-template-areas:
+      'pic1 pic1 pic1 pic1'
+      'pic2 pic3 pic4 pic5';
     grid-template-columns: auto auto auto auto;
     grid-template-rows: 75% auto;
-
     margin: 0 auto;
   }
 
@@ -1385,20 +1370,24 @@ body {
     grid-area: pic1;
     width: 100%;
     height: 100%;
-    transition: transform .2s; 
+    transition: transform 1s;
   }
+
   .pic2 {
     grid-area: pic2;
     width: 100%;
   }
+
   .pic3 {
     grid-area: pic3;
     width: 100%;
   }
+
   .pic4 {
     grid-area: pic4;
     width: 100%;
   }
+
   .pic5 {
     grid-area: pic5;
     width: 100%;
@@ -1417,7 +1406,7 @@ body {
   }
 
   /* Pop contariner buttons on the bottom */
-  .container-pop-button{
+  .container-pop-button {
     display: inline-flex;
     flex-direction: row;
     width: 90%;
@@ -1426,18 +1415,17 @@ body {
 
   .pop-button {
     cursor: pointer;
-
     width: 30%;
     height: 40px;
-    margin: 0px 20px 0px 0px;
-
+    margin: 0 20px 0 0;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.37);
     font-size: 14px;
     font-weight: bold;
-
-    position: relative;
     
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .pop-button:hover {
@@ -1445,22 +1433,28 @@ body {
     color: white;
   }
 
+  /* stylelint-disable */
   .pop-button > a {
-    display: flex;
-    align-content: center;
+    display: inline-flex;
     justify-content: space-between;
     cursor: pointer;
     text-decoration: none;
     color: rgb(16, 8, 61);
-    padding-left: 10px ;
-    padding-top: 5%;
+    font-size: 2vw;
+    width: 100%;
   }
 
   .pop-button > a > i {
-    margin: 0px 5px 0px 0px;
-    font-size: 1.2rem;
+    font-size: 2vw;
+    right: 0;
+    margin: auto 10% auto 0;
   }
 
+  .pop-button > a > span {
+    margin-left: 15%;
+  }
+
+  /* stylelint-enable */
   .pop-button > a:hover {
     color: white;
   }
@@ -1479,10 +1473,11 @@ body {
     cursor: pointer;
   }
 
-/* Clases for PopUp Windows ------------------------------------------------- */
+  /* Clases for PopUp Windows ------------------------------------------------- */
 }
 
 /* Modal classes --------------------------------------------------------- */
+
 /* burguer menu! --------------------------------------------------- */
 #modal-menu {
   background-color: rgb(255, 255, 255);
@@ -1524,7 +1519,6 @@ body {
 }
 
 /* Position of the list elements */
-
 .modal-hamburguer {
   position: absolute;
   list-style: none;
@@ -1562,4 +1556,3 @@ body {
 .modal-hamburguer a:hover {
   color: #3d8add;
 }
-/* burguer menu end! --------------------------------------------------- */
