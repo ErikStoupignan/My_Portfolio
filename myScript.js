@@ -1,5 +1,3 @@
-/* eslint linebreak-style: ["error", "windows"] */
-
 // Hamburguer button works
 const modal = document.querySelector('#modal-menu');
 const hambIcon = document.querySelector('#burguer-icon');
