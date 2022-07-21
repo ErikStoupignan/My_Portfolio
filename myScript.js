@@ -53,16 +53,12 @@ const master = [
     links: ['https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
   },
 ];
-const listProject1 = [ master[0] ];
-const listProject2 = [ master[1] ];
-const listProject3 = [ master[2] ];
-const listProject4 = [ master[3] ];
-const listProject5 = [ master[4] ];
-const listProject6 = [ master[5] ];
-
-
-
-
+const listProject1 = [master[0]];
+const listProject2 = [master[1]];
+const listProject3 = [master[2]];
+const listProject4 = [master[3]];
+const listProject5 = [master[4]];
+const listProject6 = [master[5]];
 
 hambIcon.addEventListener('click', () => {
   modal.style.display = 'block';
@@ -76,7 +72,6 @@ list.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
-
 // Function to found the index inside the master array
 function found(input) {
   for (let i = 0; i < master.length; i += 1) {
@@ -87,12 +82,8 @@ function found(input) {
   return null;
 }
 
-
-
- 
-// Project 1 
-document.getElementById('sectionproyect1').innerHTML = listProject1.map( items =>
-    `<img onclick="popUp('${items.id}')" class="box1 display-none-after" src="${items.imgs[0]}" alt="Introductory cover of the project">
+// Project 1
+document.getElementById('sectionproyect1').innerHTML = listProject1.map((items) => `<img onclick="popUp('${items.id}')" class="box1 display-none-after" src="${items.imgs[0]}" alt="Introductory cover of the project">
     <img onclick="popUp('${items.id}')" class="box1 display-none" src="${items.imgs[0]}" alt="Introductory cover of the project">
     <div class="box box2">
         <h2 class="subtitle">${items.title}</h2>
@@ -114,12 +105,10 @@ document.getElementById('sectionproyect1').innerHTML = listProject1.map( items =
                 </p>
             </div>
         </a>
-    </div>`
-  ).join('')
+    </div>`).join('');
 
-  // Project 2 
-  document.getElementById('sectionproyect2').innerHTML = listProject2.map( items =>
-    `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
+// Project 2
+document.getElementById('sectionproyect2').innerHTML = listProject2.map((items) => `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
     <div class="box box2">
     <h2 class="subtitle">${items.title}</h2>
     </div>
@@ -140,12 +129,10 @@ document.getElementById('sectionproyect1').innerHTML = listProject1.map( items =
                 </p>
             </div>
         </a>
-    </div>`
-  ).join('')
+    </div>`).join('');
 
-  // Project 3 
-  document.getElementById('sectionproyect3').innerHTML = listProject3.map( items =>
-    `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
+// Project 3
+document.getElementById('sectionproyect3').innerHTML = listProject3.map((items) => `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
     <div class="box box2">
     <h2 class="subtitle">${items.title}</h2>
     </div>
@@ -166,12 +153,10 @@ document.getElementById('sectionproyect1').innerHTML = listProject1.map( items =
                 </p>
             </div>
         </a>
-    </div>`
-  ).join('')
+    </div>`).join('');
 
-  // Project 4
-  document.getElementById('sectionproyect4').innerHTML = listProject4.map( items =>
-    `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
+// Project 4
+document.getElementById('sectionproyect4').innerHTML = listProject4.map((items) => `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
     <div class="box box2">
     <h2 class="subtitle">${items.title}</h2>
     </div>
@@ -192,12 +177,10 @@ document.getElementById('sectionproyect1').innerHTML = listProject1.map( items =
                 </p>
             </div>
         </a>
-    </div>`
-  ).join('')
+    </div>`).join('');
 
-  // Project 5
-  document.getElementById('sectionproyect5').innerHTML = listProject5.map( items =>
-    `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
+// Project 5
+document.getElementById('sectionproyect5').innerHTML = listProject5.map((items) => `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
     <div class="box box2">
     <h2 class="subtitle">${items.title}</h2>
     </div>
@@ -218,12 +201,10 @@ document.getElementById('sectionproyect1').innerHTML = listProject1.map( items =
                 </p>
             </div>
         </a>
-    </div>`
-  ).join('')
+    </div>`).join('');
 
-  // Project 6
-  document.getElementById('sectionproyect6').innerHTML = listProject6.map( items =>
-    `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
+// Project 6
+document.getElementById('sectionproyect6').innerHTML = listProject6.map((items) => `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
     <div class="box box2">
     <h2 class="subtitle">${items.title}</h2>
     </div>
@@ -244,12 +225,7 @@ document.getElementById('sectionproyect1').innerHTML = listProject1.map( items =
                 </p>
             </div>
         </a>
-    </div>`
-  ).join('')
-
-
-
-
+    </div>`).join('');
 
 // function to put the information inside the Popup
 // eslint-disable-next-line
