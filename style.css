@@ -436,10 +436,12 @@ textarea {
     text-size-adjust: 30px;
   }
 
+  /* stylelint-disable */
   textarea {
     font-family: "Poppins", sans-serif;
     font-size: 1em !important;
   }
+  /* stylelint-enable */
 
   #email-alert {
     color: red;

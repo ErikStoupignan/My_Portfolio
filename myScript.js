@@ -55,13 +55,12 @@ const master = [
   },
 ];
 // Projects variables
-const listProject1 = [master[0]];   
+const listProject1 = [master[0]];
 const listProject2 = [master[1]];
 const listProject3 = [master[2]];
 const listProject4 = [master[3]];
 const listProject5 = [master[4]];
 const listProject6 = [master[5]];
-
 
 // Open de hamburguer menu
 hambIcon.addEventListener('click', () => {
@@ -295,24 +294,21 @@ const inputs = document.querySelectorAll('#contact #email-input');
 
 // check with every letter clicked
 inputs.forEach((input) => {
-    input.addEventListener('keyup', (e) => {
-        const upperCase = email.value.replace(/[^A-Z]/g, '');
-        if(upperCase.length > 0 ) {
-            document.getElementById('email-alert').innerHTML = "Don't use capital letters in the email";
-            document.getElementById('email-input').classList.add("red-input");
-        } else {
-            document.getElementById('email-input').classList.remove("red-input");
-            document.getElementById('email-alert').innerHTML = "";
-        }
-    })
-})
-
-contact.addEventListener('submit', (e) => {
+  input.addEventListener('keyup', () => {
     const upperCase = email.value.replace(/[^A-Z]/g, '');
-    if(upperCase.length > 0 ) {
-        e.preventDefault()
-    } 
-    console.log('Funciona');
-})
+    if (upperCase.length > 0) {
+      document.getElementById('email-alert').innerHTML = "Don't use capital letters in the email.";
+      document.getElementById('email-input').classList.add('red-input');
+    } else {
+      document.getElementById('email-input').classList.remove('red-input');
+      document.getElementById('email-alert').innerHTML = '';
+    }
+  });
+});
 
-
+form.addEventListener('submit', (e) => {
+  const upperCase = email.value.replace(/[^A-Z]/g, '');
+  if (upperCase.length > 0) {
+    e.preventDefault();
+  }
+});
