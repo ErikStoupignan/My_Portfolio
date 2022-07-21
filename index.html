@@ -74,7 +74,6 @@
                 <img src="/assets/image_geometry_2.png" alt="" class="background-img2">
             </div>
         
-
             <!-- Proyects section -->
             <section id="Portfolio" class="project-section">
                 <div class="project desktop-project">
@@ -102,11 +101,7 @@
                         <img class="desk-img-2-2" src="/assets/desktop/desk-img-4-2.png" alt="">
                     </div> 
                  </div>
-            </section>
-
-            
-
-            
+            </section>         
 
             <!-- About me Section-->
             <section id="About" class="about-section">
@@ -198,20 +193,21 @@
                     <form class="inputs-group" 
                     action="https://formspree.io/f/mrgjwpka"
                     method="POST"
-                    enctype="multipart/form-data" id="contact">
+                    enctype="multipart/form-data" id="contact"> 
 
                         <label class="label-form" for="name-input"></label>
                         <input id="name-input" type="text"  name="name" placeholder="Your name" class="name-input" maxlength="30" required>
 
                         <label class="label-form" for="email-input"></label>
                         <input id="email-input" type="email" name="email" placeholder="Your email" class="email-input" required>
+                        <div id="email-alert" class="email-alert-class"></div>
 
                         <label class="label-form" for="textarea-input"></label>
-                        <textarea id="textarea-input" name="Additional-text" placeholder="Enter your message here..." class="message-input" maxlength="500" required></textarea>
+                        <textarea id="textarea-input" name="text" placeholder="Enter your message here..." class="message-input" maxlength="500" required></textarea>
 
                     
                         <div class="start-collaboration-submit">
-                                <button type="submit">Start collaboration</button>
+                                <button id="form-button" type="submit">Start collaboration</button>
                         </div>
                     </form>
                 </div>
