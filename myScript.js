@@ -3,19 +3,6 @@ const modal = document.querySelector('#modal-menu');
 const hambIcon = document.querySelector('#burguer-icon');
 const xIcon = document.querySelector('#x-icon');
 const list = document.querySelector('#list-menu');
-
-hambIcon.addEventListener('click', () => {
-  modal.style.display = 'block';
-});
-
-xIcon.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-
-list.addEventListener('click', () => {
-  modal.style.display = 'none';
-});
-
 const master = [
   {
     id: 'project1',
@@ -37,7 +24,7 @@ const master = [
     id: 'project3',
     title: 'Super project',
     paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
+    imgs: ['/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png', '/assets/Rectangle21(1).png'],
     techLlist: ['HTML', 'Ruby on Rails', 'JavaScript'],
     links: ['https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
   },
@@ -45,7 +32,7 @@ const master = [
     id: 'project4',
     title: 'Arduino developer',
     paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
+    imgs: ['/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png', '/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png'],
     techLlist: ['HTML', 'Ruby on Rails', 'JavaScript'],
     links: ['https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
   },
@@ -53,7 +40,7 @@ const master = [
     id: 'project5',
     title: 'Pressure Sensor',
     paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
+    imgs: ['/assets/Rectangle21(4).png', '/assets/hd1.png', '/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png'],
     techLlist: ['HTML', 'Ruby on Rails', 'JavaScript'],
     links: ['https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
   },
@@ -61,11 +48,34 @@ const master = [
     id: 'project6',
     title: 'Microverse Programm!',
     paragraph: 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisiUt aliquip ex ea commodo consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.',
-    imgs: ['/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png', '/assets/hd1.png'],
+    imgs: ['/assets/hd1.png', '/assets/Rectangle21(1).png', '/assets/Rectangle21(2).png', '/assets/Rectangle21(3).png', '/assets/Rectangle21(4).png'],
     techLlist: ['HTML', 'Ruby on Rails', 'JavaScript'],
     links: ['https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
   },
 ];
+const listProject1 = [ master[0] ];
+const listProject2 = [ master[1] ];
+const listProject3 = [ master[2] ];
+const listProject4 = [ master[3] ];
+const listProject5 = [ master[4] ];
+const listProject6 = [ master[5] ];
+
+
+
+
+
+hambIcon.addEventListener('click', () => {
+  modal.style.display = 'block';
+});
+
+xIcon.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+list.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
 
 // Function to found the index inside the master array
 function found(input) {
@@ -77,11 +87,176 @@ function found(input) {
   return null;
 }
 
+
+
+ 
+// Project 1 
+document.getElementById('sectionproyect1').innerHTML = listProject1.map( items =>
+    `<img onclick="popUp('${items.id}')" class="box1 display-none-after" src="${items.imgs[0]}" alt="Introductory cover of the project">
+    <img onclick="popUp('${items.id}')" class="box1 display-none" src="${items.imgs[0]}" alt="Introductory cover of the project">
+    <div class="box box2">
+        <h2 class="subtitle">${items.title}</h2>
+    </div>
+    <!-- Button's Code -->
+    <div class="box ul-container">
+        <ul class="ul-technologys">
+            <li><a href="#">${items.techLlist[0]}</a></li>
+            <li><a href="#">${items.techLlist[1]}</a></li>
+            <li><a href="#">${items.techLlist[2]}</a></li>
+        </ul>
+    </div>
+    <!-- See this project button -->
+    <div class="box align-button box6">
+        <a href="#">
+            <div class="buttom-arrow" onclick="popUp('${items.id}')">
+                <p>See this project
+                <img class="arrow" src="/assets/211621_c_right_arrow_icon.png" alt="">
+                </p>
+            </div>
+        </a>
+    </div>`
+  ).join('')
+
+  // Project 2 
+  document.getElementById('sectionproyect2').innerHTML = listProject2.map( items =>
+    `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
+    <div class="box box2">
+    <h2 class="subtitle">${items.title}</h2>
+    </div>
+    <!-- Button's Code -->
+    <div class="box ul-container">
+        <ul class="ul-technologys">
+        <li><a href="#">${items.techLlist[0]}</a></li>
+        <li><a href="#">${items.techLlist[1]}</a></li>
+        <li><a href="#">${items.techLlist[2]}</a></li>
+        </ul>
+    </div>
+    <!-- See this project button -->
+    <div class="box align-button box6">
+        <a href="#">
+            <div class="buttom-arrow" onclick="popUp('${items.id}')">
+                <p>See this project
+                <img class="arrow" src="/assets/211621_c_right_arrow_icon.png" alt="">
+                </p>
+            </div>
+        </a>
+    </div>`
+  ).join('')
+
+  // Project 3 
+  document.getElementById('sectionproyect3').innerHTML = listProject3.map( items =>
+    `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
+    <div class="box box2">
+    <h2 class="subtitle">${items.title}</h2>
+    </div>
+    <!-- Button's Code -->
+    <div class="box ul-container">
+        <ul class="ul-technologys">
+        <li><a href="#">${items.techLlist[0]}</a></li>
+        <li><a href="#">${items.techLlist[1]}</a></li>
+        <li><a href="#">${items.techLlist[2]}</a></li>
+        </ul>
+    </div>
+    <!-- See this project button -->
+    <div class="box align-button box6">
+        <a href="#">
+            <div class="buttom-arrow" onclick="popUp('${items.id}')">
+                <p>See this project
+                <img class="arrow" src="/assets/211621_c_right_arrow_icon.png" alt="">
+                </p>
+            </div>
+        </a>
+    </div>`
+  ).join('')
+
+  // Project 4
+  document.getElementById('sectionproyect4').innerHTML = listProject4.map( items =>
+    `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
+    <div class="box box2">
+    <h2 class="subtitle">${items.title}</h2>
+    </div>
+    <!-- Button's Code -->
+    <div class="box ul-container">
+        <ul class="ul-technologys">
+        <li><a href="#">${items.techLlist[0]}</a></li>
+        <li><a href="#">${items.techLlist[1]}</a></li>
+        <li><a href="#">${items.techLlist[2]}</a></li>
+        </ul>
+    </div>
+    <!-- See this project button -->
+    <div class="box align-button box6">
+        <a href="#">
+            <div class="buttom-arrow" onclick="popUp('${items.id}')">
+                <p>See this project
+                <img class="arrow" src="/assets/211621_c_right_arrow_icon.png" alt="">
+                </p>
+            </div>
+        </a>
+    </div>`
+  ).join('')
+
+  // Project 5
+  document.getElementById('sectionproyect5').innerHTML = listProject5.map( items =>
+    `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
+    <div class="box box2">
+    <h2 class="subtitle">${items.title}</h2>
+    </div>
+    <!-- Button's Code -->
+    <div class="box ul-container">
+        <ul class="ul-technologys">
+        <li><a href="#">${items.techLlist[0]}</a></li>
+        <li><a href="#">${items.techLlist[1]}</a></li>
+        <li><a href="#">${items.techLlist[2]}</a></li>
+        </ul>
+    </div>
+    <!-- See this project button -->
+    <div class="box align-button box6">
+        <a href="#">
+            <div class="buttom-arrow" onclick="popUp('${items.id}')">
+                <p>See this project
+                <img class="arrow" src="/assets/211621_c_right_arrow_icon.png" alt="">
+                </p>
+            </div>
+        </a>
+    </div>`
+  ).join('')
+
+  // Project 6
+  document.getElementById('sectionproyect6').innerHTML = listProject6.map( items =>
+    `<img onclick="popUp('${items.id}')" class="box1" src="${items.imgs[0]}" alt="Introductory cover of the project">
+    <div class="box box2">
+    <h2 class="subtitle">${items.title}</h2>
+    </div>
+    <!-- Button's Code -->
+    <div class="box ul-container">
+        <ul class="ul-technologys">
+        <li><a href="#">${items.techLlist[0]}</a></li>
+        <li><a href="#">${items.techLlist[1]}</a></li>
+        <li><a href="#">${items.techLlist[2]}</a></li>
+        </ul>
+    </div>
+    <!-- See this project button -->
+    <div class="box align-button box6">
+        <a href="#">
+            <div class="buttom-arrow" onclick="popUp('${items.id}')">
+                <p>See this project
+                <img class="arrow" src="/assets/211621_c_right_arrow_icon.png" alt="">
+                </p>
+            </div>
+        </a>
+    </div>`
+  ).join('')
+
+
+
+
+
 // function to put the information inside the Popup
 // eslint-disable-next-line
 function popUp(string) {
 
   document.getElementById('popup-1').classList.toggle('active');
+  document.getElementById('menu').style.display = 'none';
 
   const index = found(string);
   const x = [master[index]];
