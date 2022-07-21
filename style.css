@@ -6,6 +6,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em !important;
+}
+
 /* Mobile version ------------------------------------------------------------------------------------------------------------------------ */
 @media only screen and (max-width: 770px) {
   body {
@@ -428,6 +433,23 @@ body {
     height: 112px !important;
     line-height: 2em;
     padding-left: 10px;
+    text-size-adjust: 30px;
+  }
+
+  /* stylelint-disable */
+  textarea {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em !important;
+  }
+  /* stylelint-enable */
+
+  #email-alert {
+    color: red;
+  }
+
+  .red-input {
+    border: 3px solid rgba(226, 7, 7, 0.966) !important;
+    color: red;
   }
 
   .footer-section {
@@ -1091,7 +1113,7 @@ body {
     grid-template-areas:
       "ph1 input ph2"
       "ph1 input ph2";
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 350px auto;
     position: relative;
   }
@@ -1101,6 +1123,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-self: center;
+    max-width: 1500px;
   }
 
   .contact-inputs > p {
@@ -1150,10 +1174,27 @@ body {
     padding-left: 15px;
   }
 
-  .message-input {
-    border: 1px solid rgba(48, 42, 42, 0.493);
+  #email-alert {
+    color: red;
+  }
+
+  .red-input {
+    border: 3px solid rgba(226, 7, 7, 0.966) !important;
+    color: red;
+  }
+
+  .email-alert-class {
+    margin-top: 90px;
     width: 100%;
-    height: 140px;
+    position: static;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .message-input {
+    width: 100%;
+    height: 15vw;
+    max-height: 200px;
     position: absolute;
     top: 120px;
     border-radius: 5px;
@@ -1167,7 +1208,8 @@ body {
     background-color: #1a2236;
     color: white;
     width: 45%;
-    height: 50px;
+    min-width: 150px;
+    height: 12%;
     font-size: 16px;
     position: absolute;
     bottom: 0;
@@ -1175,6 +1217,7 @@ body {
     left: 0;
     margin: 0 auto 0 auto;
     margin-top: 40px;
+    flex-wrap: nowrap;
   }
 
   ::placeholder {

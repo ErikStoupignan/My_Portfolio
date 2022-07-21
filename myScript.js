@@ -3,6 +3,7 @@ const modal = document.querySelector('#modal-menu');
 const hambIcon = document.querySelector('#burguer-icon');
 const xIcon = document.querySelector('#x-icon');
 const list = document.querySelector('#list-menu');
+// Project master container
 const master = [
   {
     id: 'project1',
@@ -53,6 +54,7 @@ const master = [
     links: ['https://github.com/ErikStoupignan/My_Portfolio', 'https://github.com/ErikStoupignan/My_Portfolio'],
   },
 ];
+// Projects variables
 const listProject1 = [master[0]];
 const listProject2 = [master[1]];
 const listProject3 = [master[2]];
@@ -60,14 +62,17 @@ const listProject4 = [master[3]];
 const listProject5 = [master[4]];
 const listProject6 = [master[5]];
 
+// Open de hamburguer menu
 hambIcon.addEventListener('click', () => {
   modal.style.display = 'block';
 });
 
+// Close de hamburguer menu
 xIcon.addEventListener('click', () => {
   modal.style.display = 'none';
 });
 
+// If click in an option from de memu, close the menu
 list.addEventListener('click', () => {
   modal.style.display = 'none';
 });
@@ -281,3 +286,29 @@ function popDown() {
   document.getElementById('popup-1').classList.toggle('active');
   document.getElementById('menu').style.display = 'block';
 }
+
+// Validation form
+const form = document.querySelector('#contact');
+const email = document.querySelector('#email-input');
+const inputs = document.querySelectorAll('#contact #email-input');
+
+// check with every letter clicked
+inputs.forEach((input) => {
+  input.addEventListener('keyup', () => {
+    const upperCase = email.value.replace(/[^A-Z]/g, '');
+    if (upperCase.length > 0) {
+      document.getElementById('email-alert').innerHTML = "Don't use capital letters in the email.";
+      document.getElementById('email-input').classList.add('red-input');
+    } else {
+      document.getElementById('email-input').classList.remove('red-input');
+      document.getElementById('email-alert').innerHTML = '';
+    }
+  });
+});
+
+form.addEventListener('submit', (e) => {
+  const upperCase = email.value.replace(/[^A-Z]/g, '');
+  if (upperCase.length > 0) {
+    e.preventDefault();
+  }
+});
