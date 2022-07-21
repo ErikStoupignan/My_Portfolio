@@ -298,7 +298,7 @@ inputs.forEach((input) => {
     input.addEventListener('keyup', (e) => {
         const upperCase = email.value.replace(/[^A-Z]/g, '');
         if(upperCase.length > 0 ) {
-            document.getElementById('email-alert').innerHTML = "Don't use uppercases in the email";
+            document.getElementById('email-alert').innerHTML = "Don't use capital letters in the email";
             document.getElementById('email-input').classList.add("red-input");
         } else {
             document.getElementById('email-input').classList.remove("red-input");

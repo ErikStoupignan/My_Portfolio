@@ -1111,17 +1111,18 @@ textarea {
     grid-template-areas:
       "ph1 input ph2"
       "ph1 input ph2";
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 350px auto;
     position: relative;
   }
 
   .contact-inputs {
-    border: 1px solid #000;
     grid-area: input;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-self: center;
+    max-width: 1500px;
   }
 
   .contact-inputs > p {
