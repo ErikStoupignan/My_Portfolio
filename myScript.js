@@ -61,6 +61,15 @@ const listProject3 = [master[2]];
 const listProject4 = [master[3]];
 const listProject5 = [master[4]];
 const listProject6 = [master[5]];
+// Validation form
+const form = document.querySelector('#contact');
+const email = document.querySelector('#email-input');
+const inputs = document.querySelectorAll('#contact #email-input');
+// Preserve data in the browser - Variables 
+const inputName = document.querySelector('#name-input');
+const inputEmail = document.querySelector('#email-input');
+const inputMessage = document.querySelector('#textarea-input');
+let inputsObject = {};
 
 // Open de hamburguer menu
 hambIcon.addEventListener('click', () => {
@@ -287,11 +296,6 @@ function popDown() {
   document.getElementById('menu').style.display = 'block';
 }
 
-// Validation form
-const form = document.querySelector('#contact');
-const email = document.querySelector('#email-input');
-const inputs = document.querySelectorAll('#contact #email-input');
-
 // check with every letter clicked
 inputs.forEach((input) => {
   input.addEventListener('keyup', () => {
@@ -306,9 +310,27 @@ inputs.forEach((input) => {
   });
 });
 
+// function to review every time the user click on the form button 
 form.addEventListener('submit', (e) => {
   const upperCase = email.value.replace(/[^A-Z]/g, '');
   if (upperCase.length > 0) {
     e.preventDefault();
   }
 });
+
+// Function who push the information of the inputs inside que localStorage
+document.querySelector('#contact').addEventListener('change', () => {
+  inputsObject.name = inputName.value;
+  inputsObject.email = inputEmail.value; 
+  inputsObject.coment = inputMessage.value;
+  localStorage.setItem('data', JSON.stringify(inputsObject));
+});
+
+// Function to send the information from the localStorage to the inputs space and fill it
+window.onload = function () {
+  const data = JSON.parse(localStorage.getItem('data'));
+  if (!data) return;
+  inputName.value = data.name;
+  inputEmail.value = data.email;
+  inputMessage.value = data.coment;
+}
