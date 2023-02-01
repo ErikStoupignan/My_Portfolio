@@ -1,0 +1,85 @@
+@mixin normalize {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin header {
+  font-family: playfair-display, serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin text($weight) {
+  font-family: poppins, sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+}
+
+@mixin btn-primary {
+  background-color: $secondary-color;
+  text-align: center;
+  text-decoration: none;
+  color: $main-color;
+  border: 1px solid $secondary-color;
+  transition-duration: 0.2s;
+}
+
+@mixin btn-primary-hover {
+  background-color: $main-color;
+  color: $secondary-color;
+}
+
+@mixin btn-secondary {
+  @include btn-primary;
+
+  border: 1px solid $main-color;
+}
+
+@mixin btn-modal {
+  @include btn-primary;
+
+  background-color: $main-color;
+  color: $secondary-color;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-flow: column;
+}
+
+@mixin align-x {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin align-y {
+  display: flex;
+  align-items: center;
+}
+
+@mixin projects-deco($url) {
+  background-image: url($url);
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+@mixin experience-deco($url) {
+  background-image: url($url);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+@mixin media-x($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin media-y($height) {
+  @media only screen and (max-height: $height) {
+    @content;
+  }
+}
