@@ -2,9 +2,9 @@ const Hello = () => (
   <section className="hello">
     <div className="hello-title-container">
       <header className="hello-title">
-        <h1 id="hello">Rubén D. Pire</h1>
+        <h1 id="hello">Erik Stoupignan</h1>
         <p>
-          Hello! My name is Rubén, a Full-Stack Software Developer who graduated from Microverse;
+          Hello! My name is Erik, a Full-Stack Software Developer who graduated from Microverse;
           an online training school that uses pair programming and real-world projects to teach
           development, where I have built several websites and applications, both collaboratively
           and independently, while learning HTML/CSS, JavaScript, React/Redux, Ruby, and Ruby on
