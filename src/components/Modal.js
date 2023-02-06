@@ -23,7 +23,7 @@ const Modal = (props) => {
         <IoCloseSharp onClick={handleClose} className="modal-cross" />
         <h2 className="modal-title">{title}</h2>
         <ModalTechList technologies={technologies} />
-        <img src={images[1]} alt="Project screenshot" className="modal-img" />
+        <img src={images.project} alt="Project screenshot" className="modal-img" />
         <p className="modal-txt">{description}</p>
         <ModalButtons links={links} />
       </article>
