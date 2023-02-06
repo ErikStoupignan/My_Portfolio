@@ -1,15 +1,15 @@
 const projects = [
   {
     id: 1,
-    title: 'Covid Metrics',
-    description: 'Covid-19 Metrics is an API based web app that fetches information about covid-19 cases in the United Kingdom and renders this information in a UI. It\'s Home page displays confirmed cases for the United Kingdom and its regions. Each region has a Details page to which you can navigate by clicking on the region cards displayed in the Home page. When you navigate to one of the region details pages, the app will render more specific details for that particular region. Region details include information like confirmed cases, deaths, and recovered patients.',
-    images: { cover: './media/wrk-img-1.svg', project: './media/covid-metrics-scrnsht.png' },
+    title: 'EmojiApp',
+    description: 'EmojiApp is an API-based web app that fetches information about all emojis types that exist using HTML & Unicode format and renders this information in a UI. Each Emoji has a Details page which you can navigate by clicking on the Emoji cards displayed on the Home page. When you navigate to one of the region details pages, the app will render more specific details for that particular Emoji.',
+    images: { cover: './media/wrk-img-1.svg', project: './media/EmojiApp/Emoji-scrnsht.jpg' },
     technologies: [
       { id: 1, tech: 'HTML/CSS' },
       { id: 2, tech: 'React' },
       { id: 3, tech: 'Redux' },
     ],
-    links: { demo: 'https://rpire.github.io/covid-metrics', repository: 'https://github.com/rpire/covid-metrics' },
+    links: { demo: 'https://emojiapp-essb.netlify.app/', repository: 'https://github.com/ErikStoupignan/Capstone_3_-EmojiApp' },
   },
   {
     id: 2,
@@ -60,13 +60,13 @@ const projects = [
     id: 6,
     title: 'Pokédex',
     description: 'Poke-Dex is an API based webapp that displays cards containing information (like their image, type and location) about different pokemon. This is a single-page application(SPA) which contains the home page and comments modal pop-ups. Users can click on the heart icon to give a like to their favorite and post comments by clicking on the comment button in the modal.',
-    images: { cover: './media/wrk-img-6.svg', project: './media/covid-metrics-scrnsht.png' },
+    images: { cover: './media/wrk-img-6.svg', project: './media/Pokedex/poke-dex-scrnsht.png' },
     technologies: [
       { id: 1, tech: 'HTML/CSS' },
       { id: 2, tech: 'JavaScript' },
       { id: 3, tech: 'Webpack' },
     ],
-    links: { demo: 'https://rpire.github.io/covid-metrics', repository: 'https://github.com/rpire/covid-metrics' },
+    links: { demo: 'https://erikstoupignan.github.io/Capstone-m2-APIs-baseapp-pokemon/', repository: 'https://github.com/ErikStoupignan/Capstone-m2-APIs-baseapp-pokemon' },
   },
 ];
 
