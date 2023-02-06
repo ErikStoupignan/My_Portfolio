@@ -21,7 +21,7 @@ const ModalButtons = (props) => {
         target="_blank"
         className="modal-btn"
       >
-        <span>See Code</span>ñ
+        <span>See Code</span>
         <BsGithub className="modal-icon" />
       </a>
     </div>
