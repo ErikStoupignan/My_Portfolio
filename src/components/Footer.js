@@ -4,11 +4,13 @@ import {
 } from 'react-icons/bs';
 import { FaMedium, FaAngellist } from 'react-icons/fa';
 import FooterLinkList from './FooterLinkList';
+import ResumePath from '../data/resume';
+import * as footerLinks from '../data/footerLinks';
 
 const Footer = () => (
   <footer>
     <a
-      href="./resume.pdf"
+      href={ResumePath}
       target="_blank"
       rel="noopener noreferrer"
       className="resume-link"
@@ -17,11 +19,11 @@ const Footer = () => (
       <IoIosArrowDropright className="arrow-right" />
     </a>
     <FooterLinkList>
-      <BsGithub key="github" link="https://github.com/rpire" />
-      <BsTwitter key="twitter" link="https://twitter.com/RubenPire7/" />
-      <BsLinkedin key="linkedin" link="https://www.linkedin.com/in/ruben-d-pire/" />
-      <FaMedium key="Medium" link="https://medium.com/@rubenpire7" />
-      <FaAngellist key="Angellist" link="https://angel.co/u/ruben-pire/" />
+      <BsGithub key="github" link={footerLinks.githubPath} />
+      <BsTwitter key="twitter" link={footerLinks.twitterPath} />
+      <BsLinkedin key="linkedin" link={footerLinks.linkedinPath} />
+      <FaMedium key="Medium" link={footerLinks.mediumPath} />
+      <FaAngellist key="Angellist" link={footerLinks.wellfoundPath} />
     </FooterLinkList>
   </footer>
 );

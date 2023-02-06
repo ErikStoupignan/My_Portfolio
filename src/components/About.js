@@ -1,5 +1,6 @@
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import AboutLists from './AboutLists';
+import ResumePath from '../data/resume';
 
 const About = () => (
   <section className="about">
@@ -17,7 +18,7 @@ const About = () => (
         for coding and ventured into this amazing world of code.
       </p>
       <a
-        href="https://docs.google.com/document/d/1rfRz86C_e7xdtU0M7fhdV6f7rxv14JeddgVQXJSqfNg/edit?usp=sharing"
+        href={ResumePath}
         target="_blank"
         rel="noopener noreferrer"
         className="body-btn"
