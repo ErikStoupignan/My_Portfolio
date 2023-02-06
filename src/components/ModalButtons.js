@@ -29,7 +29,7 @@ const ModalButtons = (props) => {
 };
 
 ModalButtons.propTypes = {
-  links: propTypes.instanceOf(Array).isRequired,
+  links: propTypes.instanceOf(Object).isRequired,
 };
 
 export default ModalButtons;

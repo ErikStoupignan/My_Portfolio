@@ -17,15 +17,19 @@ const About = () => (
         two years in my home city, during this time, I learned the algorithmic thinking I needed
         for coding and ventured into this amazing world of code.
       </p>
+
       <a
+        // href="./files/resume.pdf"
         href={ResumePath}
         target="_blank"
+        download
         rel="noopener noreferrer"
         className="body-btn"
       >
         Get my CV
         <BsFillArrowRightCircleFill className="arrow-right" />
       </a>
+
     </header>
     <AboutLists />
   </section>
