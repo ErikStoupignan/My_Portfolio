@@ -10,7 +10,8 @@ const projects = [
       { id: 2, tech: 'React' },
       { id: 3, tech: 'Redux' },
     ],
-    links: ['https://rpire.github.io/covid-metrics', 'https://github.com/rpire/covid-metrics'],
+    links: { demo: 'https://rpire.github.io/covid-metrics', repository: 'https://github.com/rpire/covid-metrics' },
+
   },
   {
     id: 2,
@@ -22,7 +23,7 @@ const projects = [
       { id: 1, tech: 'HTML/CSS' },
       { id: 2, tech: 'React' },
     ],
-    links: ['https://rpire.github.io/math-magicians', 'https://github.com/rpire/math-magicians'],
+    links: { demo: 'https://rpire.github.io/covid-metrics', repository: 'https://github.com/rpire/covid-metrics' },
   },
   {
     id: 3,
@@ -34,7 +35,7 @@ const projects = [
       { id: 1, tech: 'Ruby on Rails' },
       { id: 2, tech: 'Sass' },
     ],
-    links: ['https://rpire-paytracker.herokuapp.com', 'https://github.com/rpire/budget-app'],
+    links: { demo: 'https://rpire.github.io/covid-metrics', repository: 'https://github.com/rpire/covid-metrics' },
   },
   {
     id: 4,
@@ -47,7 +48,7 @@ const projects = [
       { id: 2, tech: 'Bootstrap' },
       { id: 3, tech: 'JavaScript' },
     ],
-    links: ['https://rpire.github.io/awesome-books', 'https://github.com/rpire/awesome-books'],
+    links: { demo: 'https://rpire.github.io/covid-metrics', repository: 'https://github.com/rpire/covid-metrics' },
   },
   {
     id: 5,
@@ -59,7 +60,7 @@ const projects = [
       { id: 1, tech: 'HTML/CSS' },
       { id: 2, tech: 'JavaScript' },
     ],
-    links: ['https://rpire.github.io/module-capstone-1', 'https://github.com/rpire/module-capstone-1'],
+    links: { demo: 'https://rpire.github.io/covid-metrics', repository: 'https://github.com/rpire/covid-metrics' },
   },
   {
     id: 6,
@@ -72,7 +73,7 @@ const projects = [
       { id: 2, tech: 'JavaScript' },
       { id: 3, tech: 'Webpack' },
     ],
-    links: ['https://rpire.github.io/Poke-dex/dist/', 'https://github.com/rpire/Poke-dex'],
+    links: { demo: 'https://rpire.github.io/covid-metrics', repository: 'https://github.com/rpire/covid-metrics' },
   },
 ];
 

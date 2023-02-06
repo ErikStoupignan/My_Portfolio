@@ -7,7 +7,7 @@ const ModalButtons = (props) => {
   return (
     <div className="modal-btn-container">
       <a
-        href={links[0]}
+        href={links.demo}
         rel="noopener noreferrer"
         target="_blank"
         className="modal-btn"
@@ -16,12 +16,12 @@ const ModalButtons = (props) => {
         <BsFillArrowRightCircleFill className="modal-icon" />
       </a>
       <a
-        href={links[1]}
+        href={links.repository}
         rel="noopener noreferrer"
         target="_blank"
         className="modal-btn"
       >
-        <span>See Code</span>
+        <span>See Code</span>ñ
         <BsGithub className="modal-icon" />
       </a>
     </div>
