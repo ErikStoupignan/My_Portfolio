@@ -12,12 +12,12 @@ const About = () => (
         that can boost the morale of any team.
       </p>
       <p>
-        Previous to Microverse I obtained my Electrical Engineering degree and performed as so for
+        Previous to Microverse I obtained my Electronic Engineering degree and performed as so for
         two years in my home city, during this time, I learned the algorithmic thinking I needed
         for coding and ventured into this amazing world of code.
       </p>
       <a
-        href="./resume.pdf"
+        href="https://docs.google.com/document/d/1rfRz86C_e7xdtU0M7fhdV6f7rxv14JeddgVQXJSqfNg/edit?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="body-btn"

@@ -1,6 +1,8 @@
+import * as links from '../data/navLinks';
+
 const PortfolioHeader = () => (
-  <header className="work-header">
-    <h2 id="portfolio">Projects</h2>
+  <header id={links.projects} className="work-header">
+    <h2>Projects</h2>
   </header>
 );
 
