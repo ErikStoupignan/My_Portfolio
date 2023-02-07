@@ -4,12 +4,12 @@
 
  In my portfolio, you can find evidence of my work as a web developer.
 
+## Deployment
+This website can be viewed at: [Demo Link](https://resume-erik-sanchez-beltran.netlify.app/)
+
 ## Desktop version screenshot
 
 ![image](https://user-images.githubusercontent.com/106561762/178395159-23b149ba-5ae7-4f2d-b3f4-7fae0c491769.png)
-
-## Deployment
-This website can be viewed at: https://erikstoupignan.github.io/My_Portfolio/
 
 ## Built With
 
@@ -35,15 +35,6 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@ErikStoupignan](https://github.com/ErikStoupignan)
 - Twitter: [@Erik_Stoupignan](https://twitter.com/Erik_Stoupignan)
 - LinkedIn: [Erik Stoupignan Sánchez Beltrán](https://www.linkedin.com/in/erik-stoupignan-s%C3%A1nchez-beltr%C3%A1n-393180238/)
-
-## Collaborators
-
-👤 **Tahseen Zahra**
-
-- GitHub: [@tahseenzahra](https://github.com/tahseenzahra)
-- Twitter: [@tahseen1zahra](https://twitter.com/tahseen1zahra)
-- LinkedIn: [@tahseenzahra](https://www.linkedin.com/in/tahseenzahra/)
-
 
 ## 📝 License
 
