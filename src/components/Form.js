@@ -1,10 +1,10 @@
+// className="inputs-group"
+// action="https://formspree.io/f/mrgjwpka"
+// method="POST"
+// encType="multipart/form-data"
+
 const Form = () => (
-  <form
-    className="inputs-group"
-    action="https://formspree.io/f/mrgjwpka"
-    method="POST"
-    encType="multipart/form-data"
-  >
+  <form>
     <label htmlFor="name">
       Your name
       <input type="text" id="name" name="name" />

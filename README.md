@@ -15,6 +15,7 @@ This website can be viewed at: [Demo Link](https://resume-erik-sanchez-beltran.n
 
 - HTML
 - CSS
+- REACT
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
