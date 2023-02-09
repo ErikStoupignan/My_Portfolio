@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/My_Portfolio.github.io/static/css/main.f6d8b112.css",
-    "main.js": "/My_Portfolio.github.io/static/js/main.618dd16a.js",
-    "static/media/image_dots_with_teal.svg": "/My_Portfolio.github.io/static/media/image_dots_with_teal.69b8132c2f9e799dadc7.svg",
-    "static/media/image-geometry_6.svg": "/My_Portfolio.github.io/static/media/image-geometry_6.cc7da617d6d217331008.svg",
-    "static/media/image-geometry_4.svg": "/My_Portfolio.github.io/static/media/image-geometry_4.18a768bd64b662a807ac.svg",
-    "static/media/image_geometry_1.svg": "/My_Portfolio.github.io/static/media/image_geometry_1.b17b8a0d94fdcd162e1f.svg",
-    "static/media/menu-bkgr.svg": "/My_Portfolio.github.io/static/media/menu-bkgr.325b5e0b2e1e20462ca5.svg",
-    "static/media/geometric-deco-3.svg": "/My_Portfolio.github.io/static/media/geometric-deco-3.594c1e004d5c572eb1ca.svg",
-    "static/media/image_dots.svg": "/My_Portfolio.github.io/static/media/image_dots.5d4cf83169a9eb7964b4.svg",
-    "static/media/ic_skills.svg": "/My_Portfolio.github.io/static/media/ic_skills.4e2a2539b3c90d7d2b94.svg",
-    "static/media/hash.svg": "/My_Portfolio.github.io/static/media/hash.a57c7481d1cf68333cb1.svg",
-    "index.html": "/My_Portfolio.github.io/index.html",
-    "static/media/Group-18.svg": "/My_Portfolio.github.io/static/media/Group-18.93b97dc5f63afd2b21e3.svg",
-    "main.f6d8b112.css.map": "/My_Portfolio.github.io/static/css/main.f6d8b112.css.map",
-    "main.618dd16a.js.map": "/My_Portfolio.github.io/static/js/main.618dd16a.js.map"
+    "main.css": "/My_Portfolio/static/css/main.e584671a.css",
+    "main.js": "/My_Portfolio/static/js/main.618dd16a.js",
+    "static/media/image_dots_with_teal.svg": "/My_Portfolio/static/media/image_dots_with_teal.69b8132c2f9e799dadc7.svg",
+    "static/media/image-geometry_6.svg": "/My_Portfolio/static/media/image-geometry_6.cc7da617d6d217331008.svg",
+    "static/media/image-geometry_4.svg": "/My_Portfolio/static/media/image-geometry_4.18a768bd64b662a807ac.svg",
+    "static/media/image_geometry_1.svg": "/My_Portfolio/static/media/image_geometry_1.b17b8a0d94fdcd162e1f.svg",
+    "static/media/menu-bkgr.svg": "/My_Portfolio/static/media/menu-bkgr.325b5e0b2e1e20462ca5.svg",
+    "static/media/geometric-deco-3.svg": "/My_Portfolio/static/media/geometric-deco-3.594c1e004d5c572eb1ca.svg",
+    "static/media/image_dots.svg": "/My_Portfolio/static/media/image_dots.5d4cf83169a9eb7964b4.svg",
+    "static/media/ic_skills.svg": "/My_Portfolio/static/media/ic_skills.4e2a2539b3c90d7d2b94.svg",
+    "static/media/hash.svg": "/My_Portfolio/static/media/hash.a57c7481d1cf68333cb1.svg",
+    "index.html": "/My_Portfolio/index.html",
+    "static/media/Group-18.svg": "/My_Portfolio/static/media/Group-18.93b97dc5f63afd2b21e3.svg",
+    "main.e584671a.css.map": "/My_Portfolio/static/css/main.e584671a.css.map",
+    "main.618dd16a.js.map": "/My_Portfolio/static/js/main.618dd16a.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6d8b112.css",
+    "static/css/main.e584671a.css",
     "static/js/main.618dd16a.js"
   ]
 }
