@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # My Portfolio!
 
  In my portfolio, you can find evidence of my work as a web developer.

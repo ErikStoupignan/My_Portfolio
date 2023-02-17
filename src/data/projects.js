@@ -20,7 +20,7 @@ const projects = [
       { id: 1, tech: 'HTML/CSS' },
       { id: 2, tech: 'React' },
     ],
-    links: { demo: 'https://github.com/ErikStoupignan/math-magician', repository: 'https://github.com/ErikStoupignan/math-magician' },
+    links: { demo: 'https://math-magician-essb.netlify.app/', repository: 'https://github.com/ErikStoupignan/math-magician' },
   },
   {
     id: 3,
