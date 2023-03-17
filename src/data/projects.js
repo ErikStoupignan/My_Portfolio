@@ -14,13 +14,13 @@ const projects = [
   {
     id: 2,
     title: 'Math Magicians',
-    description: 'Math magicians is a single-page web application built with React, conformed by three different pages. The home page contains information about the app and how to navigate to the other two pages. The calculator page has the calculator app functionality that can solve basic mathematic operations. Finally, the quote page displays a quote related to mathematics.',
+    description: 'Math magicians is a single-page web application built with React, conformed of three different pages. The home page contains information about the app and how to navigate to the other two pages. The calculator page has the calculator app functionality that can solve basic mathematic operations. Finally, the quote page displays a quote related to mathematics.',
     images: { cover: './media/wrk-img-2.svg', project: './media/MathMagicians/MathMagicians.png' },
     technologies: [
       { id: 1, tech: 'HTML/CSS' },
       { id: 2, tech: 'React' },
     ],
-    links: { demo: 'https://github.com/ErikStoupignan/math-magician', repository: 'https://github.com/ErikStoupignan/math-magician' },
+    links: { demo: 'https://math-magician-essb.netlify.app/', repository: 'https://github.com/ErikStoupignan/math-magician' },
   },
   {
     id: 3,
