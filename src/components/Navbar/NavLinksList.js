@@ -1,5 +1,5 @@
 import propTypes from 'prop-types';
-import navLinks from '../data/navLinks';
+import navLinks from '../../data/navLinks';
 
 const NavLinkList = (props) => {
   const { toggleMenu } = props;

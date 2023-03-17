@@ -1,5 +1,5 @@
 import AboutList from './AboutList';
-import experiences from '../data/experiences';
+import experiences from '../../data/experiences';
 
 const AboutLists = () => (
   <div className="about-lists">

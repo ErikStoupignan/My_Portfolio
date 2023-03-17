@@ -1,8 +1,8 @@
-import Navigation from './components/Navigation';
-import Hello from './components/Hello';
-import Portfolio from './components/Portfolio';
-import About from './components/About';
-import Contact from './components/Contact';
+import Navigation from './components/Navbar/Navigation';
+import Hello from './components/Hello/Hello';
+import Portfolio from './components/Projects/Portfolio';
+import About from './components/About/About';
+import Contact from './components/Contact/Contact';
 import Footer from './components/Footer';
 
 const App = () => (

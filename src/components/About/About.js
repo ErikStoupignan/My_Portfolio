@@ -1,9 +1,9 @@
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import AboutLists from './AboutLists';
-import ResumePath from '../data/resume';
+import ResumePath from '../../data/resume';
 
 const About = () => (
-  <section className="about">
+  <section className="about About_main_container">
     <header className="about-title">
       <h2 id="about">About Me</h2>
       <p>

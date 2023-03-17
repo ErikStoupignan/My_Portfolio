@@ -1,9 +1,9 @@
 import Project from './Project';
 import PortfolioHeader from './PortfolioHeader';
-import projects from '../data/projects';
+import projects from '../../data/projects';
 
 const Portfolio = () => (
-  <section className="portfolio">
+  <section className="portfolio Projects_main_container">
     <ul className="work-list">
       <PortfolioHeader />
       <li className="project-1">

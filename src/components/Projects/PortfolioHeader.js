@@ -1,4 +1,4 @@
-import * as links from '../data/navLinks';
+import * as links from '../../data/navLinks';
 
 const PortfolioHeader = () => (
   <header id={links.projects} className="work-header">

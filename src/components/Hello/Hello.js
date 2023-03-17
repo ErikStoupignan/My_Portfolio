@@ -1,8 +1,8 @@
 const Hello = () => (
-  <section className="hello">
+  <section className="hello Hello_main_container">
     <div className="hello-title-container">
       <header className="hello-title">
-        <h1 id="hello">Erik Stoupignan</h1>
+        <h1 id="hello">Erik S. Sánchez</h1>
         <p>
           Hello! My name is Erik, a Full-Stack Software Developer who graduated from Microverse;
           an online training school that uses pair programming and real-world projects to teach

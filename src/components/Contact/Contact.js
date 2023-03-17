@@ -1,8 +1,8 @@
 import Form from './Form';
 
 const Contact = () => (
-  <section className="contact">
-    <h2 id="contact">Get Started</h2>
+  <section className="contact Contact_main_container">
+    <h2 id="contact" className="">Get Started</h2>
     <p>
       Let&apos;s buils something amazing together!
     </p>

@@ -5,7 +5,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
   background-color: $secondary-color;
 }
 
@@ -1199,4 +1199,32 @@ footer {
   #about {
     scroll-margin-top: 230px;
   }
+}
+
+// .eborder {
+//   border: 1px solid rgb(0, 0, 0);
+// }
+
+.Navbar_main_container {
+  border: 1px solid red;
+}
+
+.Hello_main_container {
+  border: 1px solid red;
+}
+
+.Projects_main_container {
+  border: 1px solid red;
+}
+
+.About_main_container {
+  border: 1px solid red;
+}
+
+.Contact_main_container {
+  border: 1px solid red;
+}
+
+.Footer_main_container {
+  border: 1px solid red;
 }
